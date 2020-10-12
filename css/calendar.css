@@ -6,7 +6,7 @@ body{
     flex-direction: column; 
 }
 
-.wrapper{ 
+.wrapperCalendar{ 
     display: -webkit-box; 
     display: -ms-flexbox; 
     display: flex; 
@@ -63,7 +63,7 @@ body > p{
 } 
 
 .calendar.small{ 
-    width: 400px; 
+    width: 450px; 
     height: 400px; 
 }     
 
