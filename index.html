@@ -22,6 +22,25 @@
 
 </head>
 
+<style>
+
+body{
+  font-family: monospace;
+  background-color: #575454;
+  color: #fff;
+}
+.headingContact{
+  text-align: center;
+  font-size: 45px;
+  border-bottom: 2px dotted #fff;
+}
+
+.containerContact{
+  background-color: #696868;
+}
+
+</style>
+
 <body>
 
   <h1 class="site-heading text-center text-white d-none d-lg-block">
@@ -80,21 +99,56 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
-          <div class="cta-inner text-center rounded">
+          <div class="containerContact">
+            <h2 class="headingContact">Contact me</h2>
+            <h2 style="text-align: center;">We'd love to Help!</h2>
+            <p style="text-align: center;">Here's a sentace about homeschooling and contacting me.  Feel free to drop a line!</p>
+          <br><br>  
+          <div class="row">
+
+          <div class="col-md-6"></div>
+            <form>
+          <input type="Text" name="text" required="" placeholder="Your Name" class="form-control">
+          <br>
+          <input type="Email" name="Email" required="" placeholder="Your Email" class="form-control">
+          <br>
+
+          <textarea rows="6" placeholder="Message" required="" class="form-control"></textarea>
+          <br>
+          <center>
+          <button class="btn btn-info">Submit</button>
+          </center>
+          <br>
+
+            </form>
+          </div>
+
+          <div class="col-md-6"></div>
+          
+
+
+
+
+
+
+
+
+          </div>
+          <!-- <div class="cta-inner text-center rounded">
             <h2 class="section-heading mb-4">
               <span class="section-heading-upper">Our Promise</span>
               <span class="section-heading-lower">To You</span>
             </h2>
             <p class="mb-0">When you walk into our shop to start your day, we are dedicated to providing you with friendly service, a welcoming atmosphere, and above all else, excellent products made with the highest quality ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
   </section>
 
   <footer class="footer text-faded text-center py-5">
-    <div class="container">
-      <p class="m-0 small">Copyright &copy; Your Website 2020</p>
+    <div class="containerContact">
+      <p class="m-0 small">Copyright &copy; Sarai’s Schoolhouse 2020</p>
     </div>
   </footer>
 
