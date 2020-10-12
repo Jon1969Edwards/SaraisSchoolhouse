@@ -62,12 +62,14 @@ p {
   display: block;
   font-size: 1rem;
   font-weight: 800;
+  color: #e6a756;
 }
 
 .section-heading .section-heading-lower {
   display: block;
   font-size: 3rem;
   font-weight: 100;
+  color: #e6a756;
 }
 
 .bg-faded {
@@ -173,7 +175,7 @@ p {
     z-index: 0;
   }
   .about-heading .about-heading-content {
-    margin-top: -5rem;
+    margin-bottom: -20rem;
     position: relative;
     z-index: 1;
   }
