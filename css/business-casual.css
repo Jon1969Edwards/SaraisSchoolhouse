@@ -62,12 +62,14 @@ p {
   display: block;
   font-size: 1rem;
   font-weight: 800;
+  color: #e6a756;
 }
 
 .section-heading .section-heading-lower {
   display: block;
   font-size: 3rem;
   font-weight: 100;
+  color: #e6a756;
 }
 
 .bg-faded {
@@ -125,7 +127,7 @@ p {
   .intro .intro-text {
     left: 0;
     width: 60%;
-    margin-top: 3rem;
+    margin-top: 17rem;
     position: absolute;
   }
   .intro .intro-text .intro-button {
