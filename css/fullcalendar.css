@@ -2,9 +2,15 @@
     position: relative;
     height: 0;
     width: 50%;
-    padding-bottom: 50%;
-    margin-left: 25px;
   }
+
+  .googleCalendar.ratio-16-9{
+    padding-bottom: 56.25%; /* 16:9 */
+  }
+
+  .googleCalendar.ratio-4-3{
+    padding-bottom: 75%; /* 4:3 */
+ }
   
   .googleCalendar iframe{
     position: absolute;
@@ -14,6 +20,4 @@
     height: 100%;
   }
 
-  .view-container-border{
-      margin-left: 50px;
-  }
+  
