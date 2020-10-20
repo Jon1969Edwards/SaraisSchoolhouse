@@ -1,16 +1,16 @@
-.product-item {
+.services-item {
   @media (min-width: 992px) {
-    .product-item-title {
+    .services-item-title {
       position: relative;
       z-index: 1;
       margin-bottom: -3rem;
     }
-    .product-item-img {
+    .services-item-img {
       position: relative;
       z-index: 0;
       max-width: 60vw;
     }
-    .product-item-description {
+    .services-item-description {
       position: relative;
       z-index: 1;
       margin-top: -3rem;

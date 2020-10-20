@@ -83,6 +83,10 @@ heading-img {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
+.bg-faded-services {
+  background-color: rgba(47, 23, 15, 0.85);
+}
+
 #mainNav {
   background-color: rgba(47, 23, 15, 0.9);
   font-family: 'Raleway';
@@ -194,17 +198,17 @@ heading-img {
 }
 
 @media (min-width: 992px) {
-  .product-item .product-item-title {
+  .services-item .services-item-title {
     position: relative;
     z-index: 1;
     margin-bottom: -3rem;
   }
-  .product-item .product-item-img {
+  .services-item .services-item-img {
     position: relative;
     z-index: 0;
     max-width: 60vw;
   }
-  .product-item .product-item-description {
+  .services-item .services-item-description {
     position: relative;
     z-index: 1;
     margin-top: -3rem;

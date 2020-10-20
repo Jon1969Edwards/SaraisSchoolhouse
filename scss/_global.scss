@@ -71,3 +71,7 @@ heading-img {
 .bg-faded {
   background-color: fade-out($white, 0.15);
 }
+
+.bg-faded-services {
+  background-color: fade-out($secondary, 0.15);
+}
