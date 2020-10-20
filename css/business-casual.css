@@ -171,13 +171,15 @@ p {
 
 @media (min-width: 992px) {
   .about-heading .about-heading-img {
-    margin-top: -5rem;
+    margin-top: 2rem;
+    max-width: 40%;
+    height: auto;
     position: relative;
     z-index: 0;
   }
   .about-heading .about-heading-content {
     margin-bottom: -33rem;
-    margin-left: 27rem;
+    margin-left: 17rem;
     margin-right: -3rem;
     position: relative;
     z-index: 1;
