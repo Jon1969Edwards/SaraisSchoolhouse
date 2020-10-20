@@ -29,6 +29,13 @@ p {
   color: rgba(255, 255, 255, 0.3);
 }
 
+heading-img {
+  margin-left: -9rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .site-heading {
   margin-top: 5rem;
   margin-bottom: 5rem;
