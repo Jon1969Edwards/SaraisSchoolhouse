@@ -1,5 +1,21 @@
 /* Scss Document */
 
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$primary: #e6a756 !default;
+$secondary: #2F170F !default;
+$third: #ffcb86 !default;
+
 $white: #fff;
 $header: #176c88;
 $active: #4f76a1;
@@ -19,7 +35,7 @@ $black: #000;
 .header {
 	margin: 2px;
 	width: 100%;
-	background: $header;
+	background: $primary;
 	font-size: 1.3em;
 	font-weight: bold;
 	color: #fff;
@@ -42,7 +58,7 @@ $black: #000;
 }
 
 .item {
-	background: $inactive;
+	background: $primary;
 	color: $white;
 	list-style-type: none;
 	margin: 10px 0px 10px 0px;
@@ -124,7 +140,7 @@ $black: #000;
 }
 
 .active .item {
-	background: $active;
+	background: $third;
 	box-shadow: 4px 10px 47px rgba(0, 0, 0, 0.5);
 	width: 265px;
 	border: solid 1px $white;
@@ -141,7 +157,7 @@ $black: #000;
 
 .scrollbar {
 	height: 15px;
-	background: $grey;
+	background: $third;
 	line-height: 0;
 	width: 90vw;
 	margin: auto;
@@ -152,7 +168,7 @@ $black: #000;
 
 .scrollbar .handle {
 	height: 100%;
-	background: $black;
+	background: $greenish;
 	cursor: pointer;
 	border-radius: 50px;
 }
@@ -171,7 +187,7 @@ main ul a {
 }
 #key {
 	padding: 10px;
-	background: $inactive;
+	background: $secondary;
 	margin: -25px 0 100px 0;
 	width: 100vw;
 	min-height: 25px;
@@ -187,7 +203,7 @@ main ul a {
 	float: right;
 	padding: 10px;
 	margin: -10px;
-	background: $greenish;
+	background: $secondary;
 	clip-path: polygon(5% 0%, 0% 100%, 100% 100%, 100% 0%);
 }
 #meetingplace {
@@ -196,5 +212,5 @@ main ul a {
 	text-align: center;
 	margin: -10px;
 	padding: 10px;
-	background: $inactive;
+	background: $primary;
 }

@@ -207,7 +207,7 @@ heading-img {
 .header {
   margin: 2px;
   width: 100%;
-  background: #176c88;
+  background: #e6a756;
   font-size: 1.3em;
   font-weight: bold;
   color: #fff;
@@ -230,7 +230,7 @@ heading-img {
 }
 
 .item {
-  background: #6286aa;
+  background: #e6a756;
   color: #fff;
   list-style-type: none;
   margin: 10px 0px 10px 0px;
@@ -313,7 +313,7 @@ heading-img {
 }
 
 .active .item {
-  background: #4f76a1;
+  background: #ffcb86;
   box-shadow: 4px 10px 47px rgba(0, 0, 0, 0.5);
   width: 265px;
   border: solid 1px #fff;
@@ -332,7 +332,7 @@ heading-img {
 
 .scrollbar {
   height: 15px;
-  background: #959595;
+  background: #ffcb86;
   line-height: 0;
   width: 90vw;
   margin: auto;
@@ -343,7 +343,7 @@ heading-img {
 
 .scrollbar .handle {
   height: 100%;
-  background: #000;
+  background: #4a592a;
   cursor: pointer;
   border-radius: 50px;
 }
@@ -366,7 +366,7 @@ main ul a {
 
 #key {
   padding: 10px;
-  background: #6286aa;
+  background: #2F170F;
   margin: -25px 0 100px 0;
   width: 100vw;
   min-height: 25px;
@@ -383,7 +383,7 @@ main ul a {
   float: right;
   padding: 10px;
   margin: -10px;
-  background: #4a592a;
+  background: #2F170F;
   -webkit-clip-path: polygon(5% 0%, 0% 100%, 100% 100%, 100% 0%);
   clip-path: polygon(5% 0%, 0% 100%, 100% 100%, 100% 0%);
 }
@@ -394,7 +394,7 @@ main ul a {
   text-align: center;
   margin: -10px;
   padding: 10px;
-  background: #6286aa;
+  background: #e6a756;
 }
 
 @media (min-width: 992px) {
