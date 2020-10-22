@@ -156,7 +156,7 @@ $black: #000;
 }
 
 .scrollbar {
-	height: 15px;
+	height: 25px;
 	background: $third;
 	line-height: 0;
 	width: 90vw;
@@ -189,7 +189,7 @@ main ul a {
 	padding: 10px;
 	background: $secondary;
 	margin: -25px 0 100px 0;
-	width: 100vw;
+	width: 100%;
 	min-height: 25px;
 	overflow: auto;
 	font-size: 1.5em;
