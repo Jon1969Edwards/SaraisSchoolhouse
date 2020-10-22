@@ -293,7 +293,7 @@ heading-img {
 }
 
 .wrapper {
-  margin: 10px;
+  margin: -5px;
 }
 
 .dayCircle {
@@ -339,6 +339,7 @@ heading-img {
   margin-bottom: 1em;
   border-radius: 50px;
   max-width: 1200px;
+  margin-top: 1em;
 }
 
 .scrollbar .handle {
@@ -379,16 +380,18 @@ main ul a {
 
 #ages {
   width: 40%;
+  color: #fff;
   text-align: center;
   float: right;
   padding: 10px;
   margin: -10px;
   background: #2F170F;
-  -webkit-clip-path: polygon(5% 0%, 0% 100%, 100% 100%, 100% 0%);
-  clip-path: polygon(5% 0%, 0% 100%, 100% 100%, 100% 0%);
+  -webkit-clip-path: polygon(4% 0%, 0% 100%, 100% 100%, 100% 0%);
+  clip-path: polygon(4% 0%, 0% 100%, 100% 100%, 100% 0%);
 }
 
 #meetingplace {
+  color: #fff;
   float: left;
   width: 60%;
   text-align: center;
