@@ -120,7 +120,17 @@ $black: #000;
 }
 
 .wrapper {
+	max-height: 820px;
+	display: flex;
+	overflow-x: auto;
 	margin: -5px;
+}
+
+.wrapper .framed {
+	min-width: 110px;
+	height: 810px;
+	line-height: 810px;
+	text-align: center;
 }
 
 .dayCircle {
