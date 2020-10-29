@@ -4,7 +4,7 @@
 
 ## Preview
 
-[![Business Casual Preview](https://startbootstrap.com/assets/img/screenshots/themes/business-casual.png)](https://startbootstrap.github.io/startbootstrap-business-casual/)
+[![Business Casual Preview](/Users/bovverskin/develop/SaraisSchoolhouse/img/screenshot.png)](https://github.com/Jon1969Edwards/SaraisSchoolhouse)
 
 **[View Live Preview](https://startbootstrap.github.io/startbootstrap-business-casual/)**
 
