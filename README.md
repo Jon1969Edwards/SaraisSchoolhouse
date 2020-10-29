@@ -1,22 +1,22 @@
-# [Start Bootstrap - Business Casual](https://startbootstrap.com/themes/business-casual/)
+# [Sarai's Schoolhouse](https://jonedwards.tech/SaraisSchoolhouse/index.html)
 
-[Business Casual](https://startbootstrap.com/themes/business-casual/) is a multipurpose website theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This theme features a landing page, about page, blog page, and a contact page along with various custom styles and components.
+<!-- [Business Casual](https://startbootstrap.com/themes/business-casual/) is a multipurpose website theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This theme features a landing page, about page, blog page, and a contact page along with various custom styles and components. -->
 
 ## Preview
 
 [![Business Casual Preview](https://raw.githubusercontent.com/Jon1969Edwards/SaraisSchoolhouse/main/img/screenshot.png)](https://github.com/Jon1969Edwards/SaraisSchoolhouse)
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-business-casual/)**
+**[View Live Preview](https://jonedwards.tech/SaraisSchoolhouse/index.html)**
 
 ## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-business-casual/master/LICENSE)
+<!-- [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-business-casual/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/startbootstrap-business-casual.svg)](https://www.npmjs.com/package/startbootstrap-business-casual)
 [![Build Status](https://travis-ci.org/StartBootstrap/startbootstrap-business-casual.svg?branch=master)](https://travis-ci.org/StartBootstrap/startbootstrap-business-casual)
 [![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-business-casual/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-business-casual)
-[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-business-casual/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-business-casual?type=dev)
+[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-business-casual/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-business-casual?type=dev) -->
 
-## Download and Installation
+<!-- ## Download and Installation
 
 To begin using this template, choose one of the following options to get started:
 
@@ -66,5 +66,5 @@ Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework
 
 ## Copyright and License
 
-Copyright 2013-2020 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-business-casual/blob/gh-pages/LICENSE) license.
+Copyright 2013-2020 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-business-casual/blob/gh-pages/LICENSE) license. -->
 # SaraisSchoolhouse
