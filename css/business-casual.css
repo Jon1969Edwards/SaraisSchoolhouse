@@ -402,6 +402,7 @@ main ul a {
     position: relative;
     z-index: 1;
     margin-bottom: -3rem;
+    margin-right: 7rem;
   }
   .services-item .services-item-img {
     position: relative;
