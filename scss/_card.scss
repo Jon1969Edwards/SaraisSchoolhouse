@@ -23,6 +23,10 @@ $third: #ffcb86 !default;
     margin: 20px;
 }
 
+// .roundedCard {
+//     border-radius: 0.25rem !important;
+//   }
+
 .cardContainer .hoverCard {
     position: relative;
     height: 250px;
@@ -30,6 +34,7 @@ $third: #ffcb86 !default;
     display: flex;
     width: 45%;
     margin: 30px 0;
+    border-radius: 0.25rem;
 }
 
 .cardContainer .hoverCard .imgBx {
