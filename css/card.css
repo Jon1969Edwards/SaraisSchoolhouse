@@ -89,6 +89,15 @@ body {
     max-width: 75px;
 }
 
+.cardContainer .hoverCard .imgBx i {
+  max-width: 100px;
+  transition: 0.5s ease-in-out;
+}
+
+.cardContainer .hoverCard:hover .imgBx i {
+  max-width: 75px;
+}
+
 .cardContainer .hoverCard .content {
     position: absolute;
     right: 0;
