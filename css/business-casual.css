@@ -132,13 +132,13 @@ heading-img {
 
 @media (min-width: 992px) {
   .intro .intro-img {
-    width: 65%;
+    width: 50%;
     float: right;
   }
   .intro .intro-text {
     left: 5;
     width: 60%;
-    margin-top: 6rem;
+    margin-top: 1rem;
     position: absolute;
   }
   .intro .intro-text .intro-button {
