@@ -558,58 +558,118 @@ main ul a {
   background-image: url(/img/picsandsiteinfo/kidsHomeschoolingBaking.jpg);
 } */
 
-.photoCard {
-  position: absolute;
-  top: 200px;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 300px;
-  height: 400px;
-  background: #262626;
-  overflow: hidden;
-  display: inline-block;
-  background-size: contain;
-  background-repeat: no-repeat;
-  cursor: pointer;
+html, body {
+  min-height:100vh;
 }
-.photoCard .imgBox,
-.photoCard .details {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  box-sizing: border-box;
-  transition: .5s;
-}
-.photoCard .imgBox {
-  top: 0;
-  left: 0;
-}
-.photoCard:hover .imgBox {
-  top: 0;
-  left: -100%;
-}
-.photoCard .imgBox img {
-  width: 100%;
-}
-.photoCard .details {
-  background: #262626;
-  top: 0;
-  left: 100%;
-  padding: 60px 30px;
-}
-.photoCard:hover .details {
-  top: 0;
-  left: 0%;
-}
-.photoCard .details h2 {
-  color: #fff;
-  text-align: center;
-  margin: 0;
-  padding: 0 0 10px;
-  border-bottom: 2px solid #fff;
 
+body {
+  /* display:flex;  */
+  align-items:center; 
+  flex-flow:column nowrap;
+  overflow-x:hidden;
 }
-.photoCard .details p {
-  margin: 20px 0 0;
-  color: #fff;
+
+.titlePhotos {
+  font:1.3em/1 monospace;
+  font-variant:small-caps;
+  letter-spacing:0.5em;
+  margin-left:29em;
 }
+
+.galleryPhotos {
+  perspective:700px;
+  width:50vw;
+  display:flex; justify-content:center; align-items:center; flex-flow:row wrap;
+  margin-top: 10em;
+  margin-right: 45em;
+}
+
+.img-heading {
+  border-radius: 7rem;
+  width: 6%;
+  height: auto;
+  padding: 20px;
+}
+
+ulp {
+  position:relative;
+  width:100px; height:100px;
+  margin:0.1em;
+  perspective-origin:center center;
+  transform-style:preserve-3d;
+  transform:rotateX(40deg);
+  transition:all 0.4s;
+}
+
+ulp:hover {
+  transform:translateZ(100px) rotateX(20deg); z-index:999;
+}
+
+ulp:hover lip {
+  filter:grayscale(0);
+}
+
+lip {
+  position:absolute; left:0; top:0;
+  backface-visibility:hidden;
+  width:100%; height:100%;
+  transition:transform 0.3s, filter 1s;
+  background:coral;
+  filter:grayscale(0.9);
+}
+/*
+Setup individual planes final poistion(by left top) and initial position(by transform)
+*/
+lip:first-of-type {transform:none;}
+lip:nth-of-type(2) {left:100%; transform-origin:left center; transform:rotateY(180deg);}
+lip:nth-of-type(3) {top:100%; transform-origin:center top; transform:rotateX(-180deg);}
+lip:nth-of-type(4) {left:-100%; transform-origin:right center; transform:rotateY(-180deg);}
+lip:nth-of-type(5) {top:-100%; transform-origin:center bottom; transform:rotateX(180deg);}
+lip:nth-of-type(6) {top:100%; left:100%; transform-origin:center top; transform:rotateX(-180deg);}
+lip:nth-of-type(7) {top:100%; left:-100%; transform-origin:right center; transform:rotateY(-180deg);}
+lip:nth-of-type(8) {top:-100%; left:-100%; transform-origin:center bottom; transform:rotateX(180deg);}
+lip:nth-of-type(9) {top:-100%; left:100%; transform-origin:left center; transform:rotateY(180deg);}
+/*
+Setup transition-delay, for mouseout state 
+*/
+lip:nth-of-type(2),lip:nth-of-type(3),lip:nth-of-type(4),lip:nth-of-type(5) {transition-delay:0.03s;}
+lip:nth-of-type(6),lip:nth-of-type(7),lip:nth-of-type(8),lip:nth-of-type(9) {transition-delay:0s;}
+ulp:hover :nth-of-type(2),ulp:hover :nth-of-type(3),ulp:hover :nth-of-type(4),ulp:hover :nth-of-type(5) {transition-delay:0s}
+ulp:hover :nth-of-type(6),ulp:hover :nth-of-type(7),ulp:hover :nth-of-type(8),ulp:hover :nth-of-type(9) {transition-delay:0.2s}
+/*
+Setup planes final state
+*/
+ulp:hover :nth-of-type(2),ulp:hover :nth-of-type(4),ulp:hover :nth-of-type(7),ulp:hover :nth-of-type(9) {transform:rotateY(0);}
+ulp:hover :nth-of-type(3), ulp:hover :nth-of-type(5),ulp:hover :nth-of-type(6), ulp:hover :nth-of-type(8) {transform:rotateX(0);}
+/* 
+Set background position
+*/
+ulp lip {background-size:300% 300%;}
+lip:nth-of-type(1) {background-position:center center;}
+lip:nth-of-type(2) {background-position:right center;}
+lip:nth-of-type(3) {background-position:center bottom;}
+lip:nth-of-type(4) {background-position:left center;}
+lip:nth-of-type(5) {background-position:center top;}
+lip:nth-of-type(6) {background-position:right bottom;}
+lip:nth-of-type(7) {background-position:left bottom;}
+lip:nth-of-type(8) {background-position:left top;}
+lip:nth-of-type(9) {background-position:right top;}
+/*
+Set background image source
+*/
+ulp:nth-of-type(1) lip { background-image:url(/img/picsandsiteinfo/colomaLivingHistory.jpg);}
+ulp:nth-of-type(1) { width:120px; height:80px; }
+ulp:nth-of-type(2) lip { background-image:url(/img/picsandsiteinfo/colomaLivingHistory2019.jpg);}
+ulp:nth-of-type(2) { width:90px; height:130px; }
+ulp:nth-of-type(3) lip { background-image:url(/img/picsandsiteinfo/kidPicHomeschooling.jpg);}
+ulp:nth-of-type(3) { width:130px; height:90px; }
+ulp:nth-of-type(4) lip { background-image:url(/img/picsandsiteinfo/kidsHomeschoolingBaking.jpg);}
+ulp:nth-of-type(4) { width:120px; height:80px; }
+ulp:nth-of-type(5) lip { background-image:url(/img/picsandsiteinfo/sasparillaAtColomaInTheBar.jpg);}
+ulp:nth-of-type(5) { width:64px; height:84px; }
+/* ulp:nth-of-type(6) lip { background-image:url(//picsum.photos/1000/666image=943);}
+ulp:nth-of-type(6) { width:100px; height:66px; } */
+/* 
+Hide debug label 
+*/
+lip { text-indent:999px; overflow:hidden; }
