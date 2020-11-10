@@ -3,6 +3,7 @@
     "name": "startbootstrap-business-casual",
     "version": "5.0.10",
     "scripts": {
+        "build": "scripts build && cp CNAME build/CNAME",
         "start": "node_modules/.bin/gulp watch"
     },
     "description": "A casual HTML website theme for businesses built with Bootstrap",
