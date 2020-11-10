@@ -327,7 +327,7 @@ buttonCard {
       font-size: 0.9rem;
     }
     #mainNav .navbar-nav .nav-item .nav-link:hover {
-      color: rgba(255, 255, 255, 0.4);
+      color: #e6a756;
     }
     #mainNav .navbar-nav .nav-item.active .nav-link:hover {
       color: #e6a756;
