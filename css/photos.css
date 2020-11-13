@@ -29,43 +29,12 @@ body {
   margin-bottom: 10em;
 }
 
-/* @media (min-width: 576px) {
-  .galleryPhotos {
-    perspective:70px;
-    width: 50%;
-    display:flex; 
-    justify-content:center; 
-    align-items:center;
-    font-size: 1.1rem;
-  }
-} */
-
-/* @media (min-width: 576px) {
-  .galleryPhotos {
-    max-width: 540px;
-  }
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 7rem;
+  background-color: #e6a756;
+  border-radius: .3rem;
 }
-
-@media (min-width: 768px) {
-  .galleryPhotos {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .galleryPhotos {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .galleryPhotos {
-    max-width: 1140px;
-    perspective:70px;
-    width: 50%;
-  }
-} */
-
 
 .img-heading {
   border-radius: 7rem;
