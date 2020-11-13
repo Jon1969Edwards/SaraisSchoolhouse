@@ -112,11 +112,11 @@ Set background image source
 ulp:nth-of-type(1) lip { background-image:url(../img/picsandsiteinfo/colomaLivingHistory.jpg);}
 ulp:nth-of-type(1) { width:120px; height:80px; }
 ulp:nth-of-type(2) lip { background-image:url(../img/picsandsiteinfo/colomaLivingHistory2019.jpg);}
-ulp:nth-of-type(2) { width:90px; height:130px; }
+ulp:nth-of-type(2) { width:120px; height:100px; }
 ulp:nth-of-type(3) lip { background-image:url(../img/picsandsiteinfo/kidPicHomeschooling.jpg);}
-ulp:nth-of-type(3) { width:90px; height:130px; }
+ulp:nth-of-type(3) { width:140px; height:100px; }
 ulp:nth-of-type(4) lip { background-image:url(../img/picsandsiteinfo/kidsHomeschoolingBaking.jpg);}
-ulp:nth-of-type(4) { width:90px; height:130px; }
+ulp:nth-of-type(4) { width:120px; height:110px; }
 ulp:nth-of-type(5) lip { background-image:url(../img/picsandsiteinfo/sasparillaAtColomaInTheBar.jpg);}
 ulp:nth-of-type(5) { width:120px; height:80px; }
 
