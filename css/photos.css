@@ -10,7 +10,16 @@ body {
   overflow-x:hidden;
 }
 
+/* .titlePhotos {
+  font:1.3em/1 monospace;
+  font-variant:small-caps;
+  letter-spacing:0.5em;
+} */
+
 .titlePhotos {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgba(230,167,86,.9);
   font:1.3em/1 monospace;
   font-variant:small-caps;
   letter-spacing:0.5em;
