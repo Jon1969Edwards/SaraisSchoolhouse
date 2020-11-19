@@ -18,13 +18,13 @@ body {
 
 .galleryPhotos {
   perspective:700px;
-  max-width: 400px;
+  max-width: 600px;
   height: auto;
   width:100%;
   display:flex; 
   justify-content:center; 
   align-items:center; 
-  /* flex-flow:row wrap; */
+  flex-flow:row wrap;
   margin-top: 10em;
   margin-bottom: 10em;
 }
