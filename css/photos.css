@@ -36,6 +36,12 @@ body {
   border-radius: .3rem;
 }
 
+.photos {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  background-color: rgba(230, 167, 86, 0.9);
+}
+
 .img-heading {
   border-radius: 7rem;
   width: 6%;
