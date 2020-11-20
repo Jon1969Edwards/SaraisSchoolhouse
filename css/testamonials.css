@@ -52,8 +52,9 @@
   
   .site-heading .site-heading-lower {
     font-size: 5rem;
-    font-weight: 100;
+    font-weight: 500;
     line-height: 4rem;
+    color: #000000;
   }
   
   .page-section {
@@ -449,7 +450,7 @@
   }
   
   .text-primary {
-    color: #865920 !important;
+    color: #ff0000 !important;
   }
   
   .bg-primary {
