@@ -11,7 +11,7 @@ body {
     background: #222;
     min-height: 100vh;
     font-family: 'Lora';
-    background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/bg-callout.jpg");
+    background-image: url('../img/bg-callout.jpg');    
     background-attachment: fixed;
     background-position: center;
     background-size: 100%;
@@ -667,7 +667,7 @@ buttonCard {
   }
   
   .text-primary {
-    color: #e6a756 !important;
+    color: #865920 !important;
   }
   
   .bg-primary {
