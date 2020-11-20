@@ -407,7 +407,7 @@ main ul a {
   .services-item .services-item-img {
     position: relative;
     z-index: 0;
-    max-width: 60vw;
+    max-width: 35vw;
   }
   .services-item .services-item-description {
     position: relative;

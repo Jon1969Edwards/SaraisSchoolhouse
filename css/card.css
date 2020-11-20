@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -28,6 +27,7 @@ body {
     /* justify-content: space-between; */
     flex-wrap: wrap;
     margin: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .cardContainer .hoverCard {
