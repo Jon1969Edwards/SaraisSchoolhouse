@@ -110,7 +110,7 @@ heading-img {
     font-size: 0.9rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: rgba(255, 255, 255, 0.4);
+    color: #e6a756;
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
     color: #e6a756;
@@ -132,13 +132,13 @@ heading-img {
 
 @media (min-width: 992px) {
   .intro .intro-img {
-    width: 65%;
+    width: 50%;
     float: right;
   }
   .intro .intro-text {
     left: 5;
     width: 60%;
-    margin-top: 6rem;
+    margin-top: 1rem;
     position: absolute;
   }
   .intro .intro-text .intro-button {
@@ -415,11 +415,13 @@ main ul a {
     position: relative;
     z-index: 1;
     margin-bottom: -3rem;
+    margin-right: 7rem;
   }
   .services-item .services-item-img {
     position: relative;
     z-index: 0;
-    max-width: 60vw;
+    max-width: 35vw;
+    margin-top: 175px;
   }
   .services-item .services-item-description {
     position: relative;

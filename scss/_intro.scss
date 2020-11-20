@@ -2,7 +2,7 @@
   position: relative;
   @media (min-width: 992px) {
     .intro-img {
-      width: 65%;
+      width: 50%;
       float: right;
     }
     .intro-text {
@@ -10,6 +10,7 @@
       width: 60%;
       margin-top: 6rem;
       position: absolute;
+      z-index: 1;
       .intro-button {
         width: 100%;
         left: 0;
