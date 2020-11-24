@@ -1,0 +1,228 @@
+body {
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+   box-sizing: border-box;
+}
+  .cardContainer {
+    position: relative;
+  }
+
+  .hoverCard {
+    /* color: white;
+    float: left;
+    width: calc(25% - 20px);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    height: 200px; */
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    /* Center vertically */
+    position: absolute;
+    top: 50%;
+    margin-top: -25px; /* half this element's height */
+  }
+
+  .cardContainer .hoverCard {
+    position: relative;
+    height: 250px;
+    background: #ffcb86;
+    display: flex;
+    width: 40%;
+    margin: 20px 350px;
+    border-radius: 0.25rem;
+    padding: 10px;
+  }
+
+  .cardContainer .hoverCard .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e6a756;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    border-radius: 0.25rem;
+}
+
+.cardContainer .hoverCard:hover .imgBx {
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out;
+    background: #2F170F;
+    border-radius: 0.25rem;
+} 
+
+.cardContainer .hoverCard .imgBx:before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+    color: rgba(70, 48, 12, 0.36);
+    font-weight: 700;
+    border-radius: 0.25rem;
+}
+
+.cardContainer .hoverCard .imgBx img {
+    max-width: 100px;
+    transition: 0.5s ease-in-out;
+}
+
+.cardContainer .hoverCard:hover .imgBx img {
+    max-width: 75px;
+}
+
+.cardContainer .hoverCard .imgBx i {
+  max-width: 100px;
+  transition: 0.5s ease-in-out;
+}
+
+.cardContainer .hoverCard:hover .imgBx i {
+  max-width: 75px;
+}
+
+.cardContainer .hoverCard .content {
+  position: absolute;
+  right: 0;
+  width: calc(100% - 75px);
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContainer .hoverCard .content h3 {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.cardContainer .hoverCard .content a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: #333;
+  text-decoration: none;
+  color: #fff;
+}
+
+ .hoverCard p {
+    font-size: 18px;
+ }
+ .cardContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+ }
+ @media screen and (max-width: 600px) {
+    .hoverCard {
+       width: 75%;
+    }
+
+    .cardContainer .hoverCard {
+      position: relative;
+      height: 250px;
+      background: #ffcb86;
+      display: flex;
+      width: 90%;
+      margin: 20px 20px;
+      border-radius: 0.25rem;
+      padding: 10px;
+    }
+
+    .cardContainer .hoverCard .content {
+      position: relative;
+      width: 100%;
+  }
+ }
+
+ @media screen and (max-width: 992px) {
+    .hoverCard {
+      width: 75%;
+    }
+
+    .cardContainer .hoverCard {
+      position: relative;
+      height: 250px;
+      background: #ffcb86;
+      display: flex;
+      width: 90%;
+      margin: 20px 20px;
+      border-radius: 0.25rem;
+      padding: 10px;
+    }
+
+    .cardContainer .hoverCard .content {
+      position: absolute;
+      right: 0;
+      width: calc(100% - 75px);
+      height: 100%;
+      padding-left: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+ }
+
+ .popup .overlay {
+   position: fixed;
+   top:0px;
+   left:-120px;
+   width:100vw;
+   height:140vh;
+   /* background:rgba(0,0,0,0.7); */
+   z-index:1;
+   display:none;
+ }
+ 
+ .popup .content {
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%) scale(0);
+   background: #ffcb86;
+   width:500px;
+   height:250px;
+   z-index:2;
+   text-align:center;
+   padding:20px;
+   box-sizing:border-box;
+   font-family:"Open Sans",sans-serif;
+ }
+ 
+ .popup .close-btn {
+   cursor:pointer;
+   position:absolute;
+   right:20px;
+   top:20px;
+   width:30px;
+   height:30px;
+   background:#222;
+   color:#fff;
+   font-size:25px;
+   font-weight:600;
+   line-height:30px;
+   text-align:center;
+   border-radius:50%;
+ }
+ 
+ .popup.active .overlay {
+   display:block;
+ }
+ 
+ .popup.active .content {
+   transition:all 300ms ease-in-out;
+   transform:translate(-50%,-50%) scale(1);
+ }
