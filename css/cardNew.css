@@ -9,13 +9,6 @@ body {
   }
 
   .hoverCard {
-    /* color: white;
-    float: left;
-    width: calc(25% - 20px);
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px;
-    height: 200px; */
     width: 50px;
     height: 50px;
     background-color: red;
@@ -28,7 +21,7 @@ body {
   .cardContainer .hoverCard {
     position: relative;
     height: 250px;
-    background: #ffcb86;
+    background: #acacac;
     display: flex;
     width: 40%;
     margin: 20px 350px;
@@ -42,7 +35,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #e6a756;
+    background: #827f7c;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -58,7 +51,7 @@ body {
     left: -75px;
     top: calc(50% - 75px);
     transition: 0.5s ease-in-out;
-    background: #2F170F;
+    background: #b7870a;
     border-radius: 0.25rem;
 } 
 
@@ -70,7 +63,7 @@ body {
     width: 100%;
     text-align: center;
     font-size: 4em;
-    color: rgba(70, 48, 12, 0.36);
+    color: rgb(233, 173, 14);
     font-weight: 700;
     border-radius: 0.25rem;
 }
@@ -87,6 +80,7 @@ body {
 .cardContainer .hoverCard .imgBx i {
   max-width: 100px;
   transition: 0.5s ease-in-out;
+  color: rgb(255, 0, 0);
 }
 
 .cardContainer .hoverCard:hover .imgBx i {
@@ -192,7 +186,7 @@ body {
    top:50%;
    left:50%;
    transform:translate(-50%,-50%) scale(0);
-   background: #ffcb86;
+   background: #acacac;
    width:500px;
    height:250px;
    z-index:2;
@@ -205,8 +199,8 @@ body {
  .popup .close-btn {
    cursor:pointer;
    position:absolute;
-   right:20px;
-   top:20px;
+   right:1px;
+   top:5px;
    width:30px;
    height:30px;
    background:#222;
