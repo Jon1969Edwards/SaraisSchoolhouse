@@ -9,6 +9,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="shortcut icon" href="./img/pine-cone.png" type="image/x-icon" size="32x32">
+  <link type=”text/css” rel=”stylesheet” href=https://calendar.google.com/calendar/”969ff39784188d8d017a0c60c8f2558aembedcompiled_fastui.css”>
+  <script type=”text/javascript” src=https://calendar.google.com/calendar/”969ff39784188d8d017a0c60c8f2558aembedcompiled__en_gb.js”></script>
 
 
   <title>Sarai’s Schoolhouse</title>
@@ -28,6 +30,7 @@
  
 
 </head>
+<<<<<<< HEAD
 <body>
 
   <h1 class="site-heading text-center text-white d-none d-lg-block">
@@ -246,6 +249,356 @@
       var todaysEvents = this.events.reduce(function(memo, ev) {
         if(ev.date.isSame(day, 'day')) {
           memo.push(ev);
+=======
+    <body>
+      <h1 class="site-heading text-center text-white d-none d-lg-block">
+        <heading-img>
+          <img class="img-heading" 
+              src="img/picsandsiteinfo/saraisSchoolhouseLogo.jpg" 
+              alt=""
+              style="width: 10%; height: auto; padding: 20px; border-radius: 5rem">
+          </img>
+          <span class="site-heading-lower">Sarai’s Schoolhouse</span>
+        </heading-img>
+        <span class="site-heading-upper text-primary mb-3">- Where Creativity, Commitment & Change Happens -</span>
+      </h1>
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.html">Sarai’s Schoolhouse</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+              </li>
+              <li class="nav-item px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="services.html">Services</a>
+              </li>
+              <li class="nav-item px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="testimonials.html">Testimonials</a>
+              </li>
+              <li class="nav-item px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="photos.html">Photos</a>
+              </li>
+              <!-- <li class="nav-item px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="calendar.html">Calendar</a>
+              </li> -->
+              <li class="nav-item px-lg-4">
+                <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=bWRlMjhmOWl0cTJobmVqbmVyb3MydTdxa2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23B39DDB&amp;color=%23009688&amp;title=Sarai&#39;s%20Schoolhouse" style="border:solid 1px #777" width="950" height="600" frameborder="0" scrolling="no"></iframe>
+      <!-- <span style="font-family: monospace;">https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=bWRlMjhmOWl0cTJobmVqbmVyb3MydTdxa2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23B39DDB&amp;color=%23009688&amp;title=Sarai&#39;s%20Schoolhouse" style="border:solid 1px #777" width="950" height="600" frameborder="0" scrolling="no"</span> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- <script>
+      // JavaScript Document
+
+      // Sample ID
+      // var calendarID = "osrm45bqrvut531hkcdocud3os@group.calendar.google.com";
+
+      // Real ID
+      var calendarID = "mde28f9itq2hnejneros2u7qkk@group.calendar.google.com";
+      var activate = 0;
+      var todaysDate = new Date();
+
+      var classy = "primary";
+      var extras = "firstThree";
+      var weekday = new Array(7);
+      weekday[0] = "Sunday";
+      weekday[1] = "Monday";
+      weekday[2] = "Tuesday";
+      weekday[3] = "Wednesday";
+      weekday[4] = "Thursday";
+      weekday[5] = "Friday";
+      weekday[6] = "Saturday";
+
+      var monthN = new Array(12);
+      monthN[0] = "January";
+      monthN[1] = "February";
+      monthN[2] = "March";
+      monthN[3] = "April";
+      monthN[4] = "May";
+      monthN[5] = "June";
+      monthN[6] = "July";
+      monthN[7] = "August";
+      monthN[8] = "September";
+      monthN[9] = "October";
+      monthN[10] = "November";
+      monthN[11] = "December";
+
+      function heyGoogle(date) {
+        "use strict";
+
+        var offset = 7;
+
+        date.setDate(date.getDate() - offset);
+
+        var today = new Date();
+        var todayM = today.getMonth() + 1;
+        var todayD = today.getDate();
+        var todayY = today.getFullYear();
+        var todayF = todayM + "/" + todayD + "/" + todayY;
+        console.log(todayF);
+        // console.log(date + " " + sixDate);
+
+        var year = date.getFullYear();
+        var day = date.getDate();
+        var month = date.getMonth() + 1;
+
+        //	var tomorrow = day + 7;
+
+        var tomorrow = new Date(date.valueOf() + 1000 * 60 * 60 * 24 * 100);
+
+        var tomorrowYear = tomorrow.getFullYear();
+        var tomorrowDay = tomorrow.getDate();
+        var tomorrowMonth = tomorrow.getMonth() + 1;
+
+        var d = year + "-" + month + "-" + day + "T00:00:00-07:00";
+        var e =
+          tomorrowYear + "-" + tomorrowMonth + "-" + tomorrowDay + "T00:00:00-07:00";
+
+        var count = 0;
+        var t = 993268800000;
+        var dayCount = 1;
+        $.ajax({
+          url:
+            "https://www.googleapis.com/calendar/v3/calendars/" +
+            calendarID +
+            "/events?orderBy=startTime&singleEvents=true&timeMax=" +
+            e +
+            "&timeMin=" +
+            d +
+            "&key=AIzaSyBMCMV4gOpk_1lLXB4gSw9EMHbiVC60_Vw",
+          dataType: "json",
+          type: "get",
+          cache: false,
+          success: function (data) {
+            $(data.items).each(function (index, value) {
+              var defaultLocal = " ";
+              var dateVar = value.start.dateTime;
+              var start = new Date(dateVar);
+
+              var checkDateM = start.getMonth() + 1;
+              var checkDateD = start.getDate();
+              var checkDateY = start.getFullYear();
+              var checkDateF = checkDateM + "/" + checkDateD + "/" + checkDateY;
+              //		console.log("Check Day F: " +checkDateF);
+
+              var startCheck = jQuery.trim(start).substring(0, 10);
+
+              var shortStart = jQuery.trim(start).substring(15, 21);
+
+              var dayName = weekday[start.getDay()];
+              var monthName = monthN[start.getMonth()];
+              var dayYear = start.getFullYear();
+              var dayDay = start.getDate();
+              var fancyDate =
+                dayName + "<br />" + monthName + " " + dayDay + ", " + dayYear;
+              //		Wed Aug 09 2017 14:00:00 GMT-0400 (EDT)
+
+              var buildTheDate =
+                checkDateD + " " + monthName + " " + checkDateY + " 00:00:00 UTC";
+              var checkStart = Date.parse(buildTheDate);
+
+              var startHour = start.getHours();
+              if (startHour > 12) {
+                startHour = startHour - 12;
+              }
+              var startMin = start.getMinutes();
+              if (startMin === 0) {
+                startMin = "00";
+              }
+              var startTime = startHour + ":" + startMin;
+
+              // 					 January 1970 00:00:00 UTC
+
+              // 	dateString= Date.parse(dateString).getTime();
+              var n = checkStart.toString();
+              console.log("N: " + n + " Build: " + buildTheDate + " Start: " + start);
+              //		console.log("N: " + n);
+              //	$("#rowing").append("<h2 style='color: red;'>This is from the script!" + checkStart + "</h2>");
+              if (t < n && value !== false) {
+                count = 0;
+                if (dayCount > 0) {
+                  $("#mainList" + dayCount).append(
+                    "<a id='bottomOfDate' onclick='growDate(" +
+                      dayCount +
+                      ")'><li class='item bottomOfDate' id='bottomOfDate" +
+                      dayCount +
+                      "'><div class='button'><img id='arrow" +
+                      dayCount +
+                      "' src='https://palmeravc.com/images/arrow-and-circle.svg'></div></li></a></ul></div>"
+                  );
+                }
+                dayCount++;
+
+                $("#rowing").append(
+                  "<div class='wrapper' id='wrapper" +
+                    dayCount +
+                    "' style='float:left;'><ul  class='dayContainer' id='mainList" +
+                    dayCount +
+                    "'><li class='header item' id='todayHeader'>" +
+                    fancyDate +
+                    "</li><div id='items'>"
+                );
+                if (todayF === checkDateF) {
+                  $("#wrapper" + dayCount).addClass("active");
+                  activate = dayCount - 2;
+                } else {
+                  activate = activate;
+                }
+              }
+
+              if (count === 0) {
+                classy = "primary";
+              } else {
+                classy = "other";
+              }
+              if (count < 3) {
+                extras = "firstThree";
+              } else {
+                extras = "extras";
+              }
+
+              var dateVarEnd = value.end.dateTime;
+              var end = new Date(dateVarEnd);
+
+              var endHour = end.getHours();
+              if (endHour > 12) {
+                endHour = endHour - 12;
+              }
+              var endMin = end.getMinutes();
+              if (endMin === 0) {
+                endMin = "00";
+              }
+
+              var endTime = endHour + ":" + endMin;
+
+              var description = value.description;
+              var loca = value.location;
+
+              if (description === undefined) {
+                description = "";
+              }
+              if (loca === undefined) {
+                loca = defaultLocal;
+              }
+
+              var locationy = loca.replace("Hilton Head Island, SC 29928, USA", "");
+              loca = locationy.replace(/,/g, "<br />");
+
+              $("#mainList" + dayCount).append(
+                "<li class='item " +
+                  extras +
+                  dayCount +
+                  " " +
+                  extras +
+                  " ' ><div class='time'>" +
+                  startTime +
+                  " - " +
+                  endTime +
+                  "</div><div class='title'>" +
+                  value.summary +
+                  "<br><span class='details'>" +
+                  description +
+                  "</span></div><div class='location'>" +
+                  loca +
+                  "</div></li>"
+              );
+
+              count++;
+              t = n;
+            });
+
+            $("#mainList" + dayCount).append(
+              "<a  id='bottomOfDate' onclick='growDate(" +
+                dayCount +
+                ")'><li class='item' id='bottomOfDate'><div class='button'><img src='https://palmeravc.com/images/arrow-and-circle.svg' id='arrow" +
+                dayCount +
+                "'></div></li></a>"
+            );
+            //		$(".dayContainer").append("<li class='item bottomOfDay'><div class='button'>Z</div></li>");
+            // console.log(data);
+          }, //End of Success from ajax call
+          complete: function () {
+            $.getScript("https://palmeravc.com/js/sly.min.js", function () {
+              console.log("loaded script and content");
+
+              var $frame = $("#centered");
+              var $wrap = $frame.parent();
+
+              // Call Sly on frame
+              $frame.sly({
+                horizontal: 1,
+                itemNav: "forceCentered",
+                smart: 1,
+                activateOn: "click",
+                mouseDragging: 1,
+                touchDragging: 1,
+                releaseSwing: 1,
+                startAt: activate,
+                activateMiddle: 1,
+                scrollBar: $wrap.find(".scrollbar"),
+                scrollBy: 1,
+                speed: 300,
+                elasticBounds: 1,
+                easing: "easeOutExpo",
+                dragHandle: 1,
+                dynamicHandle: 1,
+                clickBar: 1,
+
+                // Buttons
+                prev: $wrap.find(".prev"),
+                next: $wrap.find(".next")
+              });
+            });
+
+            //	$.getScript('http://darsa.in/sly/examples/js/horizontal.js', function () {
+
+            //	});
+          } // End Of Complete Call
+        }); // End of ajax call
+
+        console.log("horizontal should now be loaded!");
+      } // End of heyGoogle function call
+
+      function growDate(dayCount) {
+        "use strict";
+        $(".extras" + dayCount).css("opacity", "100");
+        $(".extras" + dayCount).animate(
+          {
+            height: "toggle"
+          },
+          1000
+        );
+        $(".extras" + dayCount).css("display", "inherit");
+        //	$("#arrow"+dayCount).css("transform", "rotate(180deg)");
+
+        if ($("#arrow" + dayCount).hasClass("rotated")) {
+          //	$(".extras" + dayCount).css("min-height", "135px");
+          $(".extras" + dayCount).css("height", "auto");
+          $("#arrow" + dayCount).removeClass("rotated");
+        } else {
+          $(".extras" + dayCount).css("min-height", "auto");
+          $(".extras" + dayCount).css("height", "auto");
+          $("#arrow" + dayCount).addClass("rotated");
+>>>>>>> f96d6a6fcccf998c0511d041d7818a05af1c4c8a
         }
         return memo;
       }, []);
@@ -303,7 +656,18 @@
       //Create the arrow
       var arrow = createElement('div', 'arrow');
 
+<<<<<<< HEAD
       //Create the event wrapper
+=======
+      //////// Call To Start With Current Day //////////
+      jQuery(document).ready(function () {
+        "use strict";
+        //	var day = (new Date).getDate();
+        heyGoogle(todaysDate);
+      });
+      ////// End of Call To Start With Current Day //////
+    </script> -->
+>>>>>>> f96d6a6fcccf998c0511d041d7818a05af1c4c8a
 
       details.appendChild(arrow);
       el.parentNode.appendChild(details);

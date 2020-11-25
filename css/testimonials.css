@@ -6,7 +6,7 @@
 
  body {
     font-family: 'Lora';
-    background-image: url("../img/bg-callout.jpg");
+    background-image: url('../img/bg-callout.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -52,8 +52,9 @@
   
   .site-heading .site-heading-lower {
     font-size: 5rem;
-    font-weight: 100;
+    font-weight: 500;
     line-height: 4rem;
+    color: #000000;
   }
   
   .page-section {
@@ -449,7 +450,7 @@
   }
   
   .text-primary {
-    color: #e6a756 !important;
+    color: #ff0000 !important;
   }
   
   .bg-primary {
