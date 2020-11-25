@@ -30,226 +30,6 @@
  
 
 </head>
-<<<<<<< HEAD
-<body>
-
-  <h1 class="site-heading text-center text-white d-none d-lg-block">
-    <heading-img>
-      <img class="img-heading" 
-          src="img/picsandsiteinfo/logo.jpg" 
-          href="index.html"
-          alt=""
-          style="width: 10%; height: 130px; padding: 20px; border-radius: 5rem">
-      </img>
-      <span class="site-heading-lower">Sarai’s Schoolhouse</span>
-    </heading-img>
-    <span class="site-heading-upper text-primary mb-3">- Where Creativity, Commitment & Change Happen -</span>
-  </h1>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.html">Sarai’s Schoolhouse</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="index.html">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="services.html">Services</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="testamonials.html">Testamonials</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="photos.html">Photos</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="calendar.html">Calendar</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-<!-- Calendar HTML -->
-
-<div id="calendar"></div>
-<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
-
-<!-- CSS -->
-
-
-<script>
-  !function() {
-
-  var today = moment();
-
-  function Calendar(selector, events) {
-    this.el = document.querySelector(selector);
-    this.events = events;
-    this.current = moment().date(1);
-    this.draw();
-    var current = document.querySelector('.today');
-    if(current) {
-      var self = this;
-      window.setTimeout(function() {
-        self.openDay(current);
-      }, 500);
-    }
-  }
-
-  Calendar.prototype.draw = function() {
-    //Create Header
-    this.drawHeader();
-
-    //Draw Month
-    this.drawMonth();
-
-    this.drawLegend();
-  }
-
-  Calendar.prototype.drawHeader = function() {
-    var self = this;
-    if(!this.headerCalendar) {
-      //Create the header elements
-      this.headerCalendar = createElement('div', 'headerCalendar');
-      this.headerCalendar.className = 'headerCalendar';
-
-      this.title = createElement('h1');
-
-      var right = createElement('div', 'right');
-      right.addEventListener('click', function() { self.nextMonth(); });
-
-      var left = createElement('div', 'left');
-      left.addEventListener('click', function() { self.prevMonth(); });
-
-      //Append the Elements
-      this.headerCalendar.appendChild(this.title); 
-      this.headerCalendar.appendChild(right);
-      this.headerCalendar.appendChild(left);
-      this.el.appendChild(this.headerCalendar);
-    }
-
-    this.title.innerHTML = this.current.format('MMMM YYYY');
-  }
-
-  Calendar.prototype.drawMonth = function() {
-    var self = this;
-    
-    this.events.forEach(function(ev) {
-    ev.date = self.current.clone().date(Math.random() * (29 - 1) + 1);
-    });
-    
-    
-    if(this.month) {
-      this.oldMonth = this.month;
-      this.oldMonth.className = 'month out ' + (self.next ? 'next' : 'prev');
-      this.oldMonth.addEventListener('webkitAnimationEnd', function() {
-        self.oldMonth.parentNode.removeChild(self.oldMonth);
-        self.month = createElement('div', 'month');
-        self.backFill();
-        self.currentMonth();
-        self.fowardFill();
-        self.el.appendChild(self.month);
-        window.setTimeout(function() {
-          self.month.className = 'month in ' + (self.next ? 'next' : 'prev');
-        }, 16);
-      });
-    } else {
-        this.month = createElement('div', 'month');
-        this.el.appendChild(this.month);
-        this.backFill();
-        this.currentMonth();
-        this.fowardFill();
-        this.month.className = 'month new';
-    }
-  }
-
-  Calendar.prototype.backFill = function() {
-    var clone = this.current.clone();
-    var dayOfWeek = clone.day();
-
-    if(!dayOfWeek) { return; }
-
-    clone.subtract('days', dayOfWeek+1);
-
-    for(var i = dayOfWeek; i > 0 ; i--) {
-      this.drawDay(clone.add('days', 1));
-    }
-  }
-
-  Calendar.prototype.fowardFill = function() {
-    var clone = this.current.clone().add('months', 1).subtract('days', 1);
-    var dayOfWeek = clone.day();
-
-    if(dayOfWeek === 6) { return; }
-
-    for(var i = dayOfWeek; i < 6 ; i++) {
-      this.drawDay(clone.add('days', 1));
-    }
-  }
-
-  Calendar.prototype.currentMonth = function() {
-    var clone = this.current.clone();
-
-    while(clone.month() === this.current.month()) {
-      this.drawDay(clone);
-      clone.add('days', 1);
-    }
-  }
-
-  Calendar.prototype.getWeek = function(day) {
-    if(!this.week || day.day() === 0) {
-      this.week = createElement('div', 'week');
-      this.month.appendChild(this.week);
-    }
-  }
-
-  Calendar.prototype.drawDay = function(day) {
-    var self = this;
-    this.getWeek(day);
-
-    //Outer Day
-    var outer = createElement('div', this.getDayClass(day));
-    outer.addEventListener('click', function() {
-      self.openDay(this);
-    });
-
-    //Day Name
-    var name = createElement('div', 'day-name', day.format('ddd'));
-
-    //Day Number
-    var number = createElement('div', 'day-number', day.format('DD'));
-
-
-    //Events
-    var events = createElement('div', 'day-events');
-    this.drawEvents(day, events);
-
-    outer.appendChild(name);
-    outer.appendChild(number);
-    outer.appendChild(events);
-    this.week.appendChild(outer);
-  }
-
-  Calendar.prototype.drawEvents = function(day, element) {
-    if(day.month() === this.current.month()) {
-      var todaysEvents = this.events.reduce(function(memo, ev) {
-        if(ev.date.isSame(day, 'day')) {
-          memo.push(ev);
-=======
     <body>
       <h1 class="site-heading text-center text-white d-none d-lg-block">
         <heading-img>
@@ -598,7 +378,6 @@
           $(".extras" + dayCount).css("min-height", "auto");
           $(".extras" + dayCount).css("height", "auto");
           $("#arrow" + dayCount).addClass("rotated");
->>>>>>> f96d6a6fcccf998c0511d041d7818a05af1c4c8a
         }
         return memo;
       }, []);
@@ -656,9 +435,6 @@
       //Create the arrow
       var arrow = createElement('div', 'arrow');
 
-<<<<<<< HEAD
-      //Create the event wrapper
-=======
       //////// Call To Start With Current Day //////////
       jQuery(document).ready(function () {
         "use strict";
@@ -667,7 +443,6 @@
       });
       ////// End of Call To Start With Current Day //////
     </script> -->
->>>>>>> f96d6a6fcccf998c0511d041d7818a05af1c4c8a
 
       details.appendChild(arrow);
       el.parentNode.appendChild(details);
