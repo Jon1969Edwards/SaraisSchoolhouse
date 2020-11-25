@@ -10,7 +10,7 @@ body {
   overflow-x:hidden;
 }
 
-.page-section {
+.photos-section {
   margin-top: -5em;
   margin-bottom: 5rem;
 }
@@ -140,7 +140,7 @@ lip {
     padding-bottom: 0rem;
   }
 
-  .page-section {
+  .photos-section {
     margin-top: -5rem;
     margin-bottom: -4rem;
   }
