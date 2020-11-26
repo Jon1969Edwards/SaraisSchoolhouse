@@ -6,6 +6,9 @@ iframe {
     margin: 90px 160;
 }
 
+.underConstruction {
+    margin: 90px 160px;
+}
 
 .gCalendar {
     position: relative; 
@@ -31,5 +34,9 @@ iframe {
         margin: 100px 10px;
         border: solid 15px #ff0000;
         border-style: ridge;
+    }
+
+    .underConstruction {
+        margin: 100px -7px;
     }
 }
