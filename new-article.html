@@ -1,0 +1,42 @@
+
+<form enctype="multipart/form-data" action="/content_management/articles" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="XqCoI+boIziySlleyyBk8w7964ok5zYp0onPIoYeyPYu562oahwvLEkKRWKqcygknfkWSpXi2D5uvQZsDRo3Sw==">
+    <p>
+        <label for="article_title">Title</label>
+        <br>
+        <input class="form" type="text" name="article[title]" id="article_title">
+    </p>
+    <p>
+        <label for="article_description">Description</label>
+        <br>
+        <input class="form" type="text" name="article[description]" id="article_description">
+    </p>
+    <p>
+        <label for="article_content">Content</label>
+        <br>
+        <textarea cols="30" rows="10" name="article[content]" id="article_content"></textarea>
+    </p>
+    <p>
+        <label for="article_image">Image</label>
+        <br>
+        <input type="file" name="article[image]" id="article_image">
+    </p>
+    <p>
+        <label for="article_category_id">Category</label>
+        <br>
+    </p>
+    <div class="w-64 mx-auto">
+        <select name="article[category_id]" id="article_category_id">
+            <option value="12">General</option>
+            <option value="13">Business</option>
+            <option value="14">Entertainment</option>
+            <option value="15">Health</option>
+            <option value="16">Technology</option>
+            <option value="17">Science</option>
+            <option value="18">Sports</option></select></div>
+    <p></p>
+    <p></p>
+        <div class="w-64 mx-auto">
+            <input type="submit" name="commit" value="Save Article" class="form-button" data-disable-with="Save Article">
+        </div>
+    <p></p>
+    </form>
