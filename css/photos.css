@@ -95,9 +95,11 @@ lip {
 
 @media (max-width: 992px) {
   .galleryPhotos {
-    width: 40%;
+    max-width: 50%;
     flex-direction: column;
     align-items: center;
+    perspective: 0px;
+    padding: 10px;
   }
 
   ulp {
