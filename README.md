@@ -1,14 +1,15 @@
-# [Sarai's Schoolhouse](https://jonedwards.tech/SaraisSchoolhouse/index.html)
+# [Sarai's Schoolhouse](https://www.saraisschoolhouse.com)
 
 <!-- [Business Casual](https://startbootstrap.com/themes/business-casual/) is a multipurpose website theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This theme features a landing page, about page, blog page, and a contact page along with various custom styles and components. -->
 
 ## Preview
 
-[![Business Casual Preview](https://raw.githubusercontent.com/Jon1969Edwards/SaraisSchoolhouse/main/img/screenshot2.png)](https://github.com/Jon1969Edwards/SaraisSchoolhouse)
+[![Sarai's Schoolhouse Preview](./img/screenshot2.png)](https://github.com/Jon1969Edwards/SaraisSchoolhouse)
 
-[![Business Casual Preview](https://raw.githubusercontent.com/Jon1969Edwards/SaraisSchoolhouse/main/img/screenshotMobile.png)](https://github.com/Jon1969Edwards/SaraisSchoolhouse)
+## Mobile
+<img src="./img/screenshotMobile.png" alt="screenshotMobile" width="300"/>
 
-**[View Live Preview](www.saraisschoolhouse.com)**
+**[View Live Site](https://www.saraisschoolhouse.com)**
 
 ## Status
 
