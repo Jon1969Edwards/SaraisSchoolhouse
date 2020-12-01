@@ -8,7 +8,7 @@
 
 [![Business Casual Preview](https://raw.githubusercontent.com/Jon1969Edwards/SaraisSchoolhouse/main/img/screenshotMobile.png)](https://github.com/Jon1969Edwards/SaraisSchoolhouse)
 
-**[View Live Preview](https://jonedwards.tech/SaraisSchoolhouse/index.html)**
+**[View Live Preview](www.saraisschoolhouse.com)**
 
 ## Status
 
