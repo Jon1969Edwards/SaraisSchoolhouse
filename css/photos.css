@@ -10,9 +10,9 @@ body {
   overflow-x:hidden;
 }
 
-.photos-section {
-  margin-top: -5em;
-  margin-bottom: 5rem;
+.page-section {
+  margin-top: -6em;
+  margin-bottom: -3rem;
 }
 
 /* .titlePhotos {
@@ -95,9 +95,11 @@ lip {
 
 @media (max-width: 992px) {
   .galleryPhotos {
-    width: 40%;
+    max-width: 50%;
     flex-direction: column;
     align-items: center;
+    perspective: 0px;
+    padding: 10px;
   }
 
   ulp {
