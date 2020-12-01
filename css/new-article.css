@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    font-weight: 100;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .sidebar {
+    width: 200px;
+    background-color: #3a3a44;
+    min-height: 150rem;
+    display: inline-block;
+  }
+  .page {
+    width: calc(100% - 200px);
+    display: inline-block;
+    float: right;
+    padding: 4rem 0 0 0;
+  }
+  .group {
+    padding: 2rem 0;
+  }
+  .group:not(:last-child) {
+    border-bottom: 1px solid #dddddd;
+  }
+  .group.admin {
+    background-color: #f2f2f2;
+  }
+  .field {
+    padding: 0 6rem 2rem 6rem;
+  }
+  .page .field:last-child,
+  .page .field:only-child {
+    padding-bottom: 0;
+  }
+  .header {
+    font-size: 1.125rem;
+    padding-bottom: 1rem;
+  }
+  .description p {
+    font-style: italic;
+    font-weight: 100;
+    color: #b1b0b2;
+  }
+  hr {
+    padding: 0;
+    margin: 2rem 0 !important;
+  }
+  
+  input, select {
+    appearance: none;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 0 !important;
+  }
+  strong {
+    color: #555;
+  }
+  textarea {
+    min-height: 20rem !important;
+  }
+  
+  
+  .tags {
+    padding: 0.5rem;
+  }
+  .tags input {
+    width: 8rem;
+  }
+  .tags .tag {
+    display: inline-block;
+    background-color: #47b784;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    color: #ffffff;
+    margin: 0 0.5rem 0.5rem 0;
+  }
+  .tags .tag .close {
+    color: #296c4e;
+    font-weight: bold;
+  }
+  .save {
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+    color: white;
+    background-color: #47b784;
+    margin: 1rem;
+    text-transform: uppercase;
+    margin: auto;
+    float: right;
+  }
+  .columns {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  
+  @media only screen and (max-width: 40em) {
+    .sidebar {
+      display: none;
+    }
+    .page {
+      width: 100%;
+    }
+    .field {
+      padding: 0 1rem;
+    }
+    .header {
+      padding: 2rem 0 1rem;
+    }
+    .group {
+      padding-top: 0;
+    }
+    .save {
+      margin-top: 2rem;
+      width: 100%;
+    }
+  }
