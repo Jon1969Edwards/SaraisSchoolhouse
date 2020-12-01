@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon" size="32x32">
+
+
+  <title>Sarai’s Schoolhouse</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-casual.min.css" rel="stylesheet">
+  <link href="css/youtube.css" rel="stylesheet">
+
+
+  <!-- Custom styles for contact form -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" >
+
+</head>
+
+<body>
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <heading-img>
+        <img class="img-heading" 
+            src="img/picsandsiteinfo/logo.jpg" 
+            href="index.html"
+            alt=""
+            style="width: 10%; height: 130px; padding: 20px; border-radius: 5rem">
+        </img>
+        <span class="site-heading-lower">Sarai’s Schoolhouse</span>
+      </heading-img>
+      <span class="site-heading-upper text-primary mb-3">- Where Creativity, Commitment & Change Happen -</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.html">Sarai’s Schoolhouse</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="services.html">Services</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="testimonials.html">Testimonials</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="photos.html">Photos</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="calendar.html">Calendar</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-section videoPage">
+        <iframe class="latestVideoEmbed" vnum='0' cid="UCDCD6kOG12LaGKCLVE6sKbw" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+        <iframe class="latestVideoEmbed" vnum='1' cid="UCDCD6kOG12LaGKCLVE6sKbw" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+        <iframe class="latestVideoEmbed" vnum='2' cid="UCDCD6kOG12LaGKCLVE6sKbw" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+        <iframe class="latestVideoEmbed" vnum='3' cid="UCDCD6kOG12LaGKCLVE6sKbw" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+    </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+        var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+        function loadVideo(iframe) {
+        $.getJSON(reqURL + iframe.getAttribute('cid'),
+            function(data) {
+            var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
+            console.log(videoNumber);
+            var link = data.items[videoNumber].link;
+            id = link.substr(link.indexOf("=") + 1);
+            iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=1");
+            }
+        );
+        }
+        var iframes = document.getElementsByClassName('latestVideoEmbed');
+        for (var i = 0, len = iframes.length; i < len; i++) {
+        loadVideo(iframes[i]);
+        }
+        </script>
+
+        <footer class="footer text-faded text-center py-5">
+            <div class="container">
+                <p class="m-0 small">Copyright &copy; Sarai’s Schoolhouse 2020</p>
+            </div>
+        </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+</html>

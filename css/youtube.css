@@ -1,0 +1,22 @@
+.videoPage {
+    padding: 30px;
+}
+
+.latestVideoEmbed {
+    padding: 10px;
+}
+
+@media (max-width: 992px) {
+    .videoPage {
+        margin: 100px 10px;
+    }
+
+    .latestVideoEmbed {
+        position: relative;
+        height: 250px;
+        display: flex;
+        width: 90%;
+        margin: 20px;
+        padding: 1px;
+    }
+}
