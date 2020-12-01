@@ -7,9 +7,9 @@ loginButton.addEventListener("click", (e) => {
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
-    if (username === "user" && password === "web_dev") {
+    if (username === "user" && password === "password") {
         alert("You have successfully logged in.");
-        location.assign("admin-panel.html");
+        location.assign("youtube.html");
     } else {
         loginErrorMsg.style.opacity = 1;
     }
