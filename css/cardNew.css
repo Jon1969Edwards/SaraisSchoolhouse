@@ -23,8 +23,8 @@ body {
     height: 250px;
     background: #acacac;
     display: flex;
-    width: 40%;
-    margin: 20px 350px;
+    width: 33%;
+    margin: 20px auto;
     border-radius: 0.25rem;
     padding: 10px;
   }
@@ -167,7 +167,11 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-  }
+    }
+
+    .cardContainer .hoverCard .imgBx:before {
+      font-size: 3em;
+    }
  }
 
  .popup .overlay {
