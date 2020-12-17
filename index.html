@@ -21,6 +21,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/business-casual.min.css" rel="stylesheet">
+  <link href="css/business-casual.css" rel="stylesheet">
 
   <!-- Custom styles for contact form -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" >
@@ -196,14 +197,42 @@ ul li a:hover{
 
           <br>
           <br>
-          <h2 style="color: #000000;">
-            <p>Tip of the Week</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/zSGp3JjOuqM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <!--<p>Upcoming Classes</p>
-          </h2>-->  
-            <!-- <div class="bg-faded p-5 rounded">
-              <p class="mb-0">Travelling the world for the very best quality coffee is something take pride in. When you visit us, you'll always find new blends from around the world, mainly from regions in Central and South America. We sell our blends in smaller to large bulk quantities. Please visit us in person for more details.</p>
-            </div> -->
+
+          <!-- Tip of the Week -->
+
+            <section class="page-section">
+              <h2 style="color: #000000;">
+                <div class="videoIndex">
+                  <p class="totw">Tip of the Week</p>
+                  <iframe class="indexIframe" src="https://www.youtube.com/embed/zSGp3JjOuqM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </h2>
+            </section>
+
+            <!-- <section class="page-section videoIndex">
+              <iframe class="indexIframe" vnum='0' cid="UCDCD6kOG12LaGKCLVE6sKbw" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+            </section>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script>
+            var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+            function loadVideo(iframe) {
+            $.getJSON(reqURL + iframe.getAttribute('cid'),
+                function(data) {
+                var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
+                console.log(videoNumber);
+                var link = data.items[videoNumber].link;
+                id = link.substr(link.indexOf("=") + 1);
+                iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=1");
+                }
+            );
+            }
+            var iframes = document.getElementsByClassName('indexIframe');
+            for (var i = 0, len = iframes.length; i < len; i++) {
+            loadVideo(iframes[i]);
+            }
+            </script> -->
+
           </div>
         </div>
       </div>
