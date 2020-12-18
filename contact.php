@@ -146,7 +146,7 @@ ul li a:hover{
     </div>
   </nav>
 
-  <section class="page-section cta">
+  <!-- <section class="page-section cta">
     <div class="col-xl-9 mx-auto">
       <div class="containerContact">
         <h2 class="headingContact">The best way to predict your future is to create it.</h2>
@@ -212,7 +212,7 @@ ul li a:hover{
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   
   <script>
     window.addEventListener("DOMContentLoaded", function() {
