@@ -6,7 +6,7 @@
 
  body {
     font-family: 'Lora';
-    background-image: url('../img/bg-callout.jpg');
+    background-image: url('../img/pencils.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -26,7 +26,7 @@
   }
   
   .text-faded {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.7);
   }
   
   heading-img {
@@ -70,14 +70,14 @@
     display: block;
     font-size: 1rem;
     font-weight: 800;
-    color: #e6a756;
+    color: rgba(255, 255, 255, 0.7);
   }
   
   .section-heading .section-heading-lower {
     display: block;
     font-size: 3rem;
     font-weight: 100;
-    color: #e6a756;
+    color: rgba(255, 255, 255, 0.7);
   }
   
   .bg-faded {
@@ -94,7 +94,7 @@
   }
   
   #mainNav .navbar-brand {
-    color: #e6a756;
+    color: rgba(255, 255, 255, 0.7);
   }
   
   #mainNav .navbar-nav .nav-item .nav-link {
@@ -103,7 +103,7 @@
   }
   
   #mainNav .navbar-nav .nav-item.active .nav-link {
-    color: #e6a756;
+    color: rgba(255, 255, 255, 0.7);
   }
   
   @media (min-width: 992px) {
@@ -111,10 +111,10 @@
       font-size: 0.9rem;
     }
     #mainNav .navbar-nav .nav-item .nav-link:hover {
-      color: #e6a756;
+      color: rgba(255, 255, 255, 0.7);
     }
     #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-      color: #e6a756;
+      color: rgba(255, 255, 255, 0.7);
     }
   }
   
@@ -208,7 +208,7 @@
   .header {
     margin: 2px;
     width: 100%;
-    background: #e6a756;
+    background: rgba(255, 255, 255, 0.7);
     font-size: 1.3em;
     font-weight: bold;
     color: #fff;
@@ -231,7 +231,7 @@
   }
   
   .item {
-    background: #e6a756;
+    background: rgba(255, 255, 255, 0.7);
     color: #fff;
     list-style-type: none;
     margin: 10px 0px 10px 0px;
@@ -395,7 +395,7 @@
     text-align: center;
     margin: -10px;
     padding: 10px;
-    background: #e6a756;
+    background: rgba(255, 255, 255, 0.7);
   }
   
   @media (min-width: 992px) {
@@ -431,7 +431,7 @@
   
   .list-hours .list-hours-item.today {
     font-weight: bold;
-    color: #e6a756;
+    color: rgba(255, 255, 255, 0.7);
   }
   
   @media (min-width: 992px) {
@@ -446,15 +446,15 @@
   }
   
   .footer {
-    background-color: rgba(47, 23, 15, 0.9);
+    background-color: #457b9d;
   }
   
   .text-primary {
-    color: #ff0000 !important;
+    color: #00a896 !important;
   }
   
   .bg-primary {
-    background-color: #e6a756 !important;
+    background-color: rgba(255, 255, 255, 0.7) !important;
   }
   
   .btn {
@@ -462,8 +462,8 @@
   }
   
   .btn-primary {
-    background-color: #e6a756;
-    border-color: #e6a756;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 0.7);
   }
   
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
