@@ -65,6 +65,10 @@ heading-img {
   text-transform: uppercase;
 }
 
+.sectionSigned {
+  color: #00a896;
+}
+
 .section-heading .section-heading-upper {
   display: block;
   font-size: 1rem;
