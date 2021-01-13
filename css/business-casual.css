@@ -195,9 +195,12 @@ heading-img {
   font-size: 43px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .totw {
-      margin: -185px 50px -313px;
+      margin: -185px 0px -313px -200px;
+      font-size: 32px;
+      padding-left: 247px;
+      padding-right: 0px;
   }
 }
 
