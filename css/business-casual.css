@@ -54,11 +54,12 @@ heading-img {
   font-size: 5rem;
   font-weight: 100;
   line-height: 4rem;
+  color: #457b9d;
 }
 
 .page-section {
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: -3rem;
 }
 
 .section-heading {
@@ -97,7 +98,7 @@ heading-img {
 }
 
 #mainNav .navbar-brand {
-  color: #00a896;
+  color: #67f7c1;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -114,10 +115,10 @@ heading-img {
     font-size: 0.9rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #67f7c1;
+    color: #fb8807;
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #67f7c1;
+    color: #fb8807;
   }
 }
 
@@ -494,7 +495,7 @@ main ul a {
 }
 
 .text-primary {
-  color: #00a896 !important;
+  color: #fb8807 !important;
 }
 
 .bg-primary {
