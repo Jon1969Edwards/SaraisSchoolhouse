@@ -58,7 +58,7 @@ heading-img {
 }
 
 .page-section {
-  margin-top: 5rem;
+  margin-top: 7rem;
   margin-bottom: -3rem;
 }
 
@@ -67,7 +67,7 @@ heading-img {
 }
 
 .sectionSigned {
-  color: #00a896;
+  color: #fb8807;
 }
 
 .section-heading .section-heading-upper {
@@ -89,7 +89,7 @@ heading-img {
 }
 
 .bg-faded-services {
-  background-color: rgba(47, 23, 15, 0.85);
+  background-color: #457b9d;
 }
 
 #mainNav {
@@ -191,7 +191,8 @@ heading-img {
   width: 560px; 
   height: 385px;
   padding: 10px;
-  margin: 10px 145px -300px;
+  margin: 10px 111px -300px;
+  font-size: 43px;
 }
 
 @media (max-width: 992px) {
@@ -228,6 +229,7 @@ heading-img {
 @media (min-width: 992px) {
   .about-heading .about-heading-img {
     margin-top: 2rem;
+    margin-bottom: 6rem;
     max-width: 40%;
     height: auto;
     position: relative;
@@ -459,6 +461,7 @@ main ul a {
     position: relative;
     z-index: 1;
     margin-top: -3rem;
+    margin-bottom: 6rem;
     max-width: 50vw;
   }
 }
@@ -468,7 +471,7 @@ main ul a {
 }
 
 .list-hours .list-hours-item {
-  border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+  border-bottom: 1px solid #fb8807;
   padding-bottom: .25rem;
   margin-bottom: 1rem;
   font-style: italic;

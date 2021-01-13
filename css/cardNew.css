@@ -24,7 +24,7 @@ body {
     background: #acacac;
     display: flex;
     width: 33%;
-    margin: 20px auto;
+    margin: 40px auto;
     border-radius: 0.25rem;
     padding: 10px;
   }
@@ -80,7 +80,7 @@ body {
 .cardContainer .hoverCard .imgBx i {
   max-width: 100px;
   transition: 0.5s ease-in-out;
-  color: #00a896;
+  color: #fb8807;
 }
 
 .cardContainer .hoverCard:hover .imgBx i {

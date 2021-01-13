@@ -301,11 +301,11 @@ buttonCard {
   }
   
   .bg-faded-services {
-    background-color: rgba(47, 23, 15, 0.85);
+    background-color: #457b9d;
   }
   
   #mainNav {
-    background-color: rgba(47, 23, 15, 0.9);
+    background-color: #457b9d;
     font-family: 'Raleway';
   }
   
@@ -640,7 +640,7 @@ buttonCard {
   }
   
   .list-hours .list-hours-item {
-    border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+    border-bottom: 1px solid #fb8807;
     padding-bottom: .25rem;
     margin-bottom: 1rem;
     font-style: italic;
