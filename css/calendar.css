@@ -31,9 +31,10 @@ iframe {
 
 @media (max-width: 992px) {
     .gCalendar {
-        margin: 100px 10px;
+        margin: 35px 10px;
         border: solid 15px #fb8807;
         border-style: ridge;
+        height: 550px;
     }
 
     .underConstruction {
