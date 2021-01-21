@@ -628,15 +628,15 @@ main ul a {
 }
 
 @media (max-width: 992px) {
-  .EIWH {
+  .slideUp {
     position: sticky;
     top: 26px;
     bottom: -90px;
-    width: 100px;
-    height: 54px;
+    width: 239px;
+    height: 132px;
     z-index: -1;
     border-radius: 1rem;
-    margin: -332px 1px 1px 18px;
+    margin: -4px 1px 1px -4px;
     max-width: 720px;
     box-shadow: 0 0 0px #000;
   }
