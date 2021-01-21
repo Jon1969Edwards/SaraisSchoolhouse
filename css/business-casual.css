@@ -548,12 +548,14 @@ main ul a {
   visibility: visible;
   top: 40px;
   bottom: 40px;
-  width: 270px;
-  height: 170px;
+  width: 355px;
+  height: 196px;
   border-radius: 4rem;
-  margin: 415px 1px 1px 589px;
+  /* margin: 415px 1px 1px 589px; */
   box-shadow: 0 0 10px #000;
   border: solid 8px #fb8807;
+  margin-left: 1050%;
+  margin-top: 846%;
 }
 
 @keyframes slideUp {
