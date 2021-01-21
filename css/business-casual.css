@@ -525,3 +525,37 @@ main ul a {
 .font-weight-light {
   font-weight: 100 !important;
 }
+
+.EIWH {
+  position: sticky;
+  top: 40px;
+  bottom: 40px;
+  width: 133px;
+  height: 78px;
+  z-index: -1;
+  border-radius: 4rem;
+  margin: -332px 1px 1px 1109px;
+  box-shadow: 0 0 10px #000;
+}
+
+@media (max-width: 992px) {
+  .EIWH {
+    position: sticky;
+    top: 26px;
+    bottom: -90px;
+    width: 100px;
+    height: 54px;
+    z-index: -1;
+    border-radius: 1rem;
+    margin: -332px 1px 1px 18px;
+    max-width: 720px;
+    box-shadow: 0 0 0px #000;
+  }
+}
+
+.img-heading {
+ width: 133px;
+ height: 78px;
+ border-radius: 5rem;
+ box-shadow: 0 0 10px #000;
+}
