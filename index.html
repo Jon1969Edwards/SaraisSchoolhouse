@@ -123,8 +123,15 @@ ul li a:hover{
       <span class="site-heading-upper text-primary mb-3">- Where Creativity, Commitment & Change Happen -</span>
     </h1>
 
-    <img src="img/EIWH.jpg" class="EIWH">
+    <script>
+      window.onscroll = function() {myFunction()};
 
+      function myFunction() {
+        if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
+          document.getElementById("myImg").className = "slideUp";
+        }
+      }
+    </script>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
@@ -181,6 +188,9 @@ ul li a:hover{
             <!-- <div class="intro-button mx-auto">
               <a class="btn btn-primary btn-xl" href="products.html">Check out our pictures!</a>
             </div> -->
+          </div>
+          <div class="col-1">
+            <img src="img/EIWH.jpg" id="myImg" class="EIWH">
           </div>
         </div>
       </div>
