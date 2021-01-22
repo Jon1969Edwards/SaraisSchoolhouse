@@ -56,6 +56,9 @@ heading-img {
   font-weight: 100;
   line-height: 4rem;
   color: #457b9d;
+  margin-left: 46px;
+  margin-right: -88px;
+  padding-right: 40px;
 }
 
 .page-section {
@@ -684,6 +687,7 @@ main ul a {
  border-radius: 5rem;
  box-shadow: 0 0 10px #000;
  margin-bottom: 30px;
+ margin-right: -38px;
 }
 
 @media (max-width: 992px) {

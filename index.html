@@ -123,15 +123,6 @@ ul li a:hover{
       <span class="site-heading-upper text-primary mb-3">- Where Creativity, Commitment & Change Happen -</span>
     </h1>
 
-    <script>
-      window.onscroll = function() {myFunction()};
-
-      function myFunction() {
-        if (document.body.scrollTop > 950 || document.documentElement.scrollTop > 950) {
-          document.getElementById("myImg").className = "slideUp";
-        }
-      }
-    </script>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
@@ -174,10 +165,6 @@ ul li a:hover{
         <div class="intro">
           <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/red_school_house.gif" alt="">
           <div class="intro-text right-0 text-center bg-faded p-5 rounded" style="z-index: 1;">
-            <!-- <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Mess with the bull</span>
-              <span class="section-heading-lower">Get the horns</span>
-            </h2> -->
             <p style="color: #000000;"class="mb-3">As a classically trained, dually credentialed teacher, I help guide both new and experienced homeschooling families in designing a homeschool program that embodies their personal educational philosophy. Together we will create the groundwork for your homeschool program that is rooted in creativity, commitment and change for all learning. Along with professional tutoring and group class sessions, we also explore curriculum best suited for your child, learning supports and accommodations needed, as well as a daily, weekly and monthly rhythm that provides a sense of exploration and cadence for success throughout the day.</p>
             <h2 class="section-heading mb-4"></h2>
               <span class="sectionSigned">Sarai Genzlinger-Weeks</span>
@@ -185,32 +172,15 @@ ul li a:hover{
             <strong>
               <p style="color: #000000;"class="License">Business License #00843473</p>
             </strong>
-            <!-- <div class="intro-button mx-auto">
-              <a class="btn btn-primary btn-xl" href="products.html">Check out our pictures!</a>
-            </div> -->
           </div>
-          <!-- <div class="col-1">
-            <img src="img/EIWH.jpg" id="myImg" class="EIWH">
-          </div> -->
         </div>
       </div>
     </section>
-    <!-- <br><br>
-    <br><br>
-    <br><br>
-    <br><br> -->
 
     <section class="page-section">
       <div class="container">
         <div class="services-item">
-          <div class="services-item-title d-flex">
-            <!-- <div class="bg-faded p-5 d-flex ml-auto rounded">
-              <h2 class="section-heading mb-0">
-                <span class="section-heading-upper">From Around the World</span>
-                <span class="section-heading-lower">Bulk Speciality Blends</span>
-              </h2>
-            </div> -->
-          </div>
+          <div class="services-item-title d-flex"></div>
 
           <br>
           <br>
@@ -223,19 +193,12 @@ ul li a:hover{
                   <p>Tip of the Week</p>
                 </div>
                 <div class="videoIndex">
-                  <!-- <p class="totw">Tip of the Week</p> -->
-                  <!-- <iframe class="indexIframe" src="https://www.youtube.com/embed/cco8hP1aSb0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                   <iframe class="indexIframe" src="https://www.youtube.com/embed/cco8hP1aSb0" vnum='0' cid="UC7jcTIRCkX5MGzGyyu9fLSw" width="600" height="340" frameborder="0" allowfullscreen></iframe>
                 </div>
               </h2>
             </section>
 
-            <!-- 'Tip of the Week' future code  -->
-            <!-- Use below code once we have the 'cid' from youtube -->
-
-            <!-- <section class="page-section videoIndex">
-              <iframe class="indexIframe" vnum='0' cid="UCDCD6kOG12LaGKCLVE6sKbw" width="600" height="340" frameborder="0" allowfullscreen></iframe>
-            </section> -->
+            <!-- Tip of the Week JS -->
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
             <script>
@@ -331,6 +294,17 @@ ul li a:hover{
         </div>
       </div>
     </section>
+
+    <!-- JavaScript for EIWH image animation -->
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      function myFunction() {
+        if (document.body.scrollTop > 1550 || document.documentElement.scrollTop > 1550) {
+          document.getElementById("myImg").className = "slideUp";
+        }
+      }
+    </script>
     
     <script>
       window.addEventListener("DOMContentLoaded", function() {
@@ -379,58 +353,6 @@ ul li a:hover{
         xhr.send(data);
       }
     </script>
-        <!-- <section class="page-section cta">
-          <div class="col-xl-9 mx-auto">
-            <div class="containerContact">
-              <h2 class="headingContact">Contact me</h2>
-              <h2 style="text-align: center;">We'd love to Help!</h2>
-              <p style="text-align: center;">Here's a sentace about homeschooling and contacting me.  Feel free to drop a line!</p>
-            <br><br>  
-              <div class="row">
-
-                <div class="col-md-6">
-                  <form action="https://formspree.io/mrgoqgzw" method="POST" id="my-form" style="margin-left: 30px;">
-                    <div class="form-group">
-                      <input type="Text" name="text" required="" placeholder="Your Name" class="form-control">
-                    </div>
-                    <br>
-                    <div class="form-group">
-                      <input type="Email" name="Email" required="" placeholder="Your Email" class="form-control">
-                    </div>
-                    <br>
-                    <div class="form-group">
-                      <textarea rows="6" placeholder="Message" required="" class="form-control"></textarea>
-                    </div>
-                    <br>
-                      <center>
-                        <button class="btnContact btn-infoContact" type="submit" value="Send">Submit</button>
-                      </center>
-                    <br><br><br>
-                  </form>
-                  <div id="status"></div>
-                </div>
-              </div>
-                
-              <div class="col-md-1"></div>
-                <div class="col-md-5">
-                  <p class="icn"><i class="fa fa-map-marker"></i> &nbsp;&nbsp; 1804 Douglas Blvd,</p>
-                  <p class="icn"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Roseville, CA </p>
-                  <p class="icn"><i class="fa fa-phone"></i> &nbsp;&nbsp; (916) 123-4567 </p>
-                  <p class="icn"><i class="fa fa-envelope"></i> &nbsp;&nbsp; soolai@yahoo.com </p>
-                  <hr>
-                  <div class="media">
-
-                    <ul class="list-unstyled">
-                      <li><b href="https://facebook.com"> <i class="fab fa-facebook-f"></i></b></li>
-                      <li><b href="https://twitter.com"> <i class="fab fa-twitter"></i></b> </li>
-                      <li><b href="https://instagram.com"> <i class="fab fa-instagram"></i></b> </li>
-                      <li><b href="https://youtube.com"> <i class="fab fa-youtube"></i></b> </li>
-                    </ul>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </section> -->
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
