@@ -518,6 +518,7 @@ main ul a {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 160px;
 }
 
 .text-primary {
@@ -682,6 +683,7 @@ main ul a {
  height: 78px;
  border-radius: 5rem;
  box-shadow: 0 0 10px #000;
+ margin-bottom: 30px;
 }
 
 @media (max-width: 992px) {

@@ -21,7 +21,7 @@ body {
   .cardContainer .hoverCard {
     position: relative;
     height: 250px;
-    background: #acacac;
+    background: #c7d7e2;
     display: flex;
     width: 33%;
     margin: 40px auto;
