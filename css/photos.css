@@ -49,7 +49,7 @@ body {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 7rem;
-  background-color: #e6a756;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: .3rem;
 }
 

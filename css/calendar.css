@@ -12,11 +12,11 @@ iframe {
 
 .gCalendar {
     position: relative; 
-    padding-bottom: 75%; 
+    padding-bottom: 100%; 
     height: 0; 
     overflow: hidden;
     margin: 90px 160px;
-    border: solid 15px #ff0000;
+    border: solid 15px #fb8807;
     border-style: ridge;
     font-family: 'Lora';
 }
@@ -29,11 +29,13 @@ iframe {
     height: 100%; 
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .gCalendar {
-        margin: 100px 10px;
-        border: solid 15px #ff0000;
+        margin: 35px 10px;
+        border: solid 15px #fb8807;
         border-style: ridge;
+        height: 550px;
+        padding-bottom: 1015px;
     }
 
     .underConstruction {

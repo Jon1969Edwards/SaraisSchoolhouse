@@ -12,6 +12,9 @@
 
   <title>Sarai’s Schoolhouse</title>
 
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,6 +24,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/business-casual.min.css" rel="stylesheet">
+  <link href="css/business-casual.css" rel="stylesheet">
 
   <!-- Custom styles for contact form -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" >
@@ -32,40 +36,40 @@
 body{
   font-family: monospace;
   background-color: #575454;
-  color: #e6a756;
+  color: rgba(255, 255, 255, 0.7);
 }
 .headingContact{
   text-align: center;
   font-size: 30px;
-  border-bottom: 2px dotted #e6a756;
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.7);
 }
 
 .containerContact{
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: #457b9d;;
   border-radius: 5px;
 }
 
 .btnContact{
-  color: #e6a756;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .btn-infoContact{
   width: 50%;
   letter-spacing: 2px;
   background: transparent;
-  color: #e6a756;
+  color: rgba(255, 255, 255, 0.7);
   transition: all 0.5s ease-in-out;
 }
 
 .btn-infoContact:hover{
   transform: scale(1.05);
-  color: rgba(230, 167, 86, 0.5);
+  color: #67f7c1;
 }
 
 .icn{
   font-family: monospace;
   font-size: 17px;
-  color: #e6a756;
+  color: rgba(255, 255, 255, 0.7);
   padding-left: 1rem;
 }
 
@@ -80,7 +84,7 @@ hr{
 }
 
 ul li b{
-  color: rgba(230, 167, 86, 0.5);
+  color: #fb8807;
   float: left;
   font-family: monospace;
   font-size: 22px;
@@ -90,7 +94,7 @@ ul li b{
 }
 
 ul li a:hover{
-  color: #e6a756;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 </style>
@@ -99,11 +103,13 @@ ul li a:hover{
 
   <h1 class="site-heading text-center text-white d-none d-lg-block">
     <heading-img>
-      <img class="img-heading" 
-          src="img/picsandsiteinfo/logo.jpg" 
-          alt=""
-          style="width: 10%; height: 130px; padding: 20px; border-radius: 5rem">
-      </img>
+      <a href="index.html" target = "_self">
+        <img class="img-heading" 
+            src="img/picsandsiteinfo/logo.jpg" 
+            alt=""
+            style="width: 10%; height: 130px; padding: 20px; border-radius: 5rem">
+        </img>
+      </a>
       <span class="site-heading-lower">Sarai’s Schoolhouse</span>
     </heading-img>
     <span class="site-heading-upper text-primary mb-3">- Where Creativity, Commitment & Change Happen -</span>
@@ -185,6 +191,10 @@ ul li a:hover{
                           name="message">
                 </textarea>
               </div>
+                <center>
+                  <div class="g-recaptcha" data-sitekey="6Lfwdi0aAAAAAAFQ-G_u6rYbV9w2RaC4Uxdt6zng"></div>
+                </center>
+                <br>
                 <center>
                   <button class="btnContact btn-infoContact" type="submit" value="Send" id="my-form-button">Submit</button>
                 </center>

@@ -4,10 +4,10 @@
 
 ## Preview
 
-[![Sarai's Schoolhouse Preview](./img/screenshot2.png)](https://github.com/Jon1969Edwards/SaraisSchoolhouse)
+[![Sarai's Schoolhouse Preview](./img/webScreenshot.png)](https://www.saraisschoolhouse.com)
 
 ## Mobile
-<img src="./img/screenshotMobile.png" alt="screenshotMobile" width="300"/>
+<img src="./img/mobileScreenshot.png" alt="screenshotMobile" width="300"/>
 
 **[View Live Site](https://www.saraisschoolhouse.com)**
 

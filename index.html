@@ -9,6 +9,11 @@
   <meta name="author" content="">
   <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon" size="32x32">
 
+  <!-- Google Site Verification -->
+  <meta name="google-site-verification" content="2SdZfUkoqyWYvCDe2LWql69tcWo8TLZSqHyZAUJvoC0" />
+  
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <title>Sarai’s Schoolhouse</title>
 
@@ -21,6 +26,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/business-casual.min.css" rel="stylesheet">
+  <link href="css/business-casual.css" rel="stylesheet">
 
   <!-- Custom styles for contact form -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" >
@@ -32,40 +38,40 @@
 body{
   font-family: monospace;
   background-color: #575454;
-  color: #e6a756;
+  color: rgba(255, 255, 255, 0.7);
 }
 .headingContact{
   text-align: center;
   font-size: 30px;
-  border-bottom: 2px dotted #e6a756;
+  border-bottom: 7px dotted #fb8807;
 }
 
 .containerContact{
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: #457b9d;;
   border-radius: 5px;
 }
 
 .btnContact{
-  color: #e6a756;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .btn-infoContact{
   width: 50%;
   letter-spacing: 2px;
   background: transparent;
-  color: #e6a756;
+  color: rgba(255, 255, 255, 0.7);
   transition: all 0.5s ease-in-out;
 }
 
 .btn-infoContact:hover{
   transform: scale(1.05);
-  color: rgba(230, 167, 86, 0.5);
+  color: #fb8807;
 }
 
 .icn{
   font-family: monospace;
   font-size: 17px;
-  color: #e6a756;
+  color: rgba(255, 255, 255, 0.7);
   padding-left: 1rem;
 }
 
@@ -80,7 +86,7 @@ hr{
 }
 
 ul li b{
-  color: rgba(230, 167, 86, 0.5);
+  color: #fb8807;
   float: left;
   font-family: monospace;
   font-size: 22px;
@@ -90,7 +96,7 @@ ul li b{
 }
 
 ul li a:hover{
-  color: #e6a756;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .License{
@@ -106,17 +112,26 @@ ul li a:hover{
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
       <heading-img>
-        <img class="img-heading" 
-            src="img/picsandsiteinfo/logo.jpg" 
-            href="index.html"
-            alt=""
-            style="width: 10%; height: 130px; padding: 20px; border-radius: 5rem">
-        </img>
+        <a href="index.html" target = "_self">
+          <img class="img-heading" 
+              src="img/picsandsiteinfo/logo.jpg" 
+              alt="">
+          </img>
+        </a>
         <span class="site-heading-lower">Sarai’s Schoolhouse</span>
       </heading-img>
       <span class="site-heading-upper text-primary mb-3">- Where Creativity, Commitment & Change Happen -</span>
     </h1>
 
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      function myFunction() {
+        if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
+          document.getElementById("myImg").className = "slideUp";
+        }
+      }
+    </script>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
@@ -154,7 +169,7 @@ ul li a:hover{
       </div>
     </nav>
 
-    <section class="page-section clearfix">
+    <section class="page-section1 clearfix">
       <div class="container">
         <div class="intro">
           <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/red_school_house.gif" alt="">
@@ -165,7 +180,7 @@ ul li a:hover{
             </h2> -->
             <p style="color: #000000;"class="mb-3">As a classically trained, dually credentialed teacher, I help guide both new and experienced homeschooling families in designing a homeschool program that embodies their personal educational philosophy. Together we will create the groundwork for your homeschool program that is rooted in creativity, commitment and change for all learning. Along with professional tutoring and group class sessions, we also explore curriculum best suited for your child, learning supports and accommodations needed, as well as a daily, weekly and monthly rhythm that provides a sense of exploration and cadence for success throughout the day.</p>
             <h2 class="section-heading mb-4"></h2>
-              <span class="section-heading-upper">Sarai Genzlinger-Weeks</span>
+              <span class="sectionSigned">Sarai Genzlinger-Weeks</span>
             </h2>
             <strong>
               <p style="color: #000000;"class="License">Business License #00843473</p>
@@ -173,6 +188,9 @@ ul li a:hover{
             <!-- <div class="intro-button mx-auto">
               <a class="btn btn-primary btn-xl" href="products.html">Check out our pictures!</a>
             </div> -->
+          </div>
+          <div class="col-1">
+            <img src="img/EIWH.jpg" id="myImg" class="EIWH">
           </div>
         </div>
       </div>
@@ -196,14 +214,46 @@ ul li a:hover{
 
           <br>
           <br>
-          <h2 style="color: #000000;">
-            <p>Tip of the Week</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/zSGp3JjOuqM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <!--<p>Upcoming Classes</p>
-          </h2>-->  
-            <!-- <div class="bg-faded p-5 rounded">
-              <p class="mb-0">Travelling the world for the very best quality coffee is something take pride in. When you visit us, you'll always find new blends from around the world, mainly from regions in Central and South America. We sell our blends in smaller to large bulk quantities. Please visit us in person for more details.</p>
-            </div> -->
+
+          <!-- Tip of the Week -->
+
+            <section class="page-section">
+              <h2 style="color: #fb8807;">
+                <div class="videoIndex">
+                  <p class="totw">Tip of the Week</p>
+                  <!-- <iframe class="indexIframe" src="https://www.youtube.com/embed/cco8hP1aSb0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                  <iframe class="indexIframe" src="https://www.youtube.com/embed/cco8hP1aSb0" vnum='0' cid="UC7jcTIRCkX5MGzGyyu9fLSw" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </h2>
+            </section>
+
+            <!-- 'Tip of the Week' future code  -->
+            <!-- Use below code once we have the 'cid' from youtube -->
+
+            <!-- <section class="page-section videoIndex">
+              <iframe class="indexIframe" vnum='0' cid="UCDCD6kOG12LaGKCLVE6sKbw" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+            </section> -->
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script>
+            var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+            function loadVideo(iframe) {
+            $.getJSON(reqURL + iframe.getAttribute('cid'),
+                function(data) {
+                var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
+                console.log(videoNumber);
+                var link = data.items[videoNumber].link;
+                id = link.substr(link.indexOf("=") + 1);
+                iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=1");
+                }
+            );
+            }
+            var iframes = document.getElementsByClassName('indexIframe');
+            for (var i = 0, len = iframes.length; i < len; i++) {
+            loadVideo(iframes[i]);
+            }
+            </script>
+
           </div>
         </div>
       </div>
@@ -252,6 +302,10 @@ ul li a:hover{
                             name="message">
                   </textarea>
                 </div>
+                  <center>
+                    <div class="g-recaptcha" data-sitekey="6Lfwdi0aAAAAAAFQ-G_u6rYbV9w2RaC4Uxdt6zng"></div>
+                  </center>
+                  <br>
                   <center>
                     <button class="btnContact btn-infoContact" type="submit" value="Send" id="my-form-button">Submit</button>
                   </center>

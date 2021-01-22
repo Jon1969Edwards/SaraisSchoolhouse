@@ -24,7 +24,7 @@ body {
     background: #acacac;
     display: flex;
     width: 33%;
-    margin: 20px auto;
+    margin: 40px auto;
     border-radius: 0.25rem;
     padding: 10px;
   }
@@ -35,7 +35,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #827f7c;
+    background: #457b9d;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -51,7 +51,7 @@ body {
     left: -75px;
     top: calc(50% - 75px);
     transition: 0.5s ease-in-out;
-    background: #b7870a;
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 0.25rem;
 } 
 
@@ -63,7 +63,7 @@ body {
     width: 100%;
     text-align: center;
     font-size: 4em;
-    color: rgb(233, 173, 14);
+    color: rgba(255, 255, 255, 0.7);
     font-weight: 700;
     border-radius: 0.25rem;
 }
@@ -80,7 +80,7 @@ body {
 .cardContainer .hoverCard .imgBx i {
   max-width: 100px;
   transition: 0.5s ease-in-out;
-  color: rgb(255, 0, 0);
+  color: #fb8807;
 }
 
 .cardContainer .hoverCard:hover .imgBx i {
