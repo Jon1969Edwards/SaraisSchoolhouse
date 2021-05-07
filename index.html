@@ -177,57 +177,6 @@ ul li a:hover{
       </div>
     </section>
 
-    <section class="page-section">
-      <div class="container">
-        <div class="services-item">
-          <div class="services-item-title d-flex"></div>
-
-          <br>
-          <br>
-
-          <!-- Tip of the Week -->
-
-            <section class="page-section2">
-              <h2 style="color: #fb8807;">
-                <div class="totw">
-                  <p>Tip of the Week</p>
-                </div>
-                <div class="videoIndex">
-                  <iframe class="indexIframe" src="https://www.youtube.com/embed/cco8hP1aSb0" vnum='0' cid="UC7jcTIRCkX5MGzGyyu9fLSw" width="600" height="340" frameborder="0" allowfullscreen></iframe>
-                </div>
-              </h2>
-            </section>
-
-            <!-- Tip of the Week JS -->
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-            <script>
-            var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
-            function loadVideo(iframe) {
-            $.getJSON(reqURL + iframe.getAttribute('cid'),
-                function(data) {
-                var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
-                console.log(videoNumber);
-                var link = data.items[videoNumber].link;
-                id = link.substr(link.indexOf("=") + 1);
-                iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=1");
-                }
-            );
-            }
-            var iframes = document.getElementsByClassName('indexIframe');
-            for (var i = 0, len = iframes.length; i < len; i++) {
-            loadVideo(iframes[i]);
-            }
-            </script>
-
-          </div>
-        </div>
-      </div>
-
-      <br>
-      <br>
-
-    </section>
 
     <section class="page-section cta">
       <div class="col-xl-9 mx-auto">
